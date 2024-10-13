@@ -1,24 +1,24 @@
 require("./global")
 
 const mess = {
-   wait: "`[ # ] Tunggu Lagi Proses Kontol`",
-   success: "`[ # ] Sukses Full Veri-veri good`",
-   on: "*`[ On Feature ]` - Sudah Aktif*", 
-   off: "*`[ Off Feature ]` - Sudah Off*",
+   wait: "`[ # ] wait for the process to complete`",
+   success: "`[ # ] completed`",
+   on: "*`[ On Feature ]` - on*", 
+   off: "*`[ Off Feature ]` - Off*",
    query: {
-       text: "`[ # ] Teks Nya Mana Kak?`",
-       link: "`[ # ] Link Nya Mana Kak?`",
+       text: "`[ # ] wheres the text?`",
+       link: "`[ # ] whers the link??`",
    },
    error: {
-       fitur: "`[ # ] Mohon Maaf Kak Fitur Eror Silahkan Chat Developer Bot Agar Bisa Segera Diperbaiki`",
+       fitur: "`[ # ] Talk to my owner`",
    },
    only: {
-       group: "`[ # ] Fitur Ini Cuma Bisa Di Akses Di Dalam Group`",
-       private: "`[ # ] Fitur Ini Cuma Bisa Di Akses Di Privat Chat`",
-       owner: "`[ # ] Sok Asik Ngentod`",
-       admin: "`[ # ] Fitur Ini Cuma Bisa Di Akses Oleh Aetmin`",
-       badmin: "`[ # ] Gabisa, Mangkanya Bot ZynTzy Jadiin Aetmin`",
-       premium: "`[ # ] Fitur Ini Cuma Bisa Di Akses Oleh Member Prem ZynTzy`",
+       group: "`[ # ] group`",
+       private: "`[ # ] private`",
+       owner: "`[ # ] owner`",
+       admin: "`[ # ] admin`",
+       badmin: "`[ # ] bot must be admin`",
+       premium: "`[ # ] To buy premium,chat my owner https://wa.me/27623649420`",
    }
 }
 
