@@ -640,6 +640,7 @@ const bugmenu = `
 3).chinese-kill
 4).fuck
 5).rejeong-bug
+6).rape
 My name is Re-Jeong`
 let sections = [{
 title: '⿻  ⌜ Re-Jeong ⌟  ⿻',
