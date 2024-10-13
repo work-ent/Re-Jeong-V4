@@ -1,20 +1,20 @@
 require("./database/module")
 
 //GLOBAL PAYMENT
-global.storename = "𝙎𝙖𝙣𝙕`𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇"
+global.storename = "Re-Jeong "
 global.dana = "-"
 global.qris = "https://a.top4top.io/p_319465f4i0.jpeg"
 
 
 // GLOBAL SETTING
-global.owner = "6289684349436" //masukin no lu
-global.namabot = "𝙎𝙖𝙣𝙕`𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇"
-global.nomorbot = "6289684349436" //masukin no lu
-global.namaCreator = "𝙎𝙖𝙣𝙕`𝙆𝙖𝙡𝙨𝙚𝙡 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇"
+global.owner = "27623649420" //masukin no lu
+global.namabot = "Re-Jeong V4"
+global.nomorbot = "27623649420" //masukin no lu
+global.namaCreator = "Re-Jeong "
 global.linkyt = "-"
 global.autoJoin = false
 global.antilink = false
-global.versisc = '𝟭𝟮.𝟬.𝟬'
+global.versisc = '4.0.0'
 
 // DELAY JPM
 global.delayjpm = 5500
@@ -31,10 +31,10 @@ global.location = '1'
 //GLOBAL THUMB
 
 global.codeInvite = ""
-global.imageurl = 'https://i.ibb.co.com/rk7bqjc/5be664d9-e5da-4623-8e7f-64efc0c187c3.jpg'
-global.isLink = 'https://whatsapp.com/channel/0029VahNvB6IyPtUAQ4qSl32'
-global.packname = "Zyn"
-global.author = "Zynxzo"
+global.imageurl = 'https://telegra.ph/file/019207dd7bf306d343b7e.jpg'
+global.isLink = 'https://whatsapp.com/channel/0029ValVRdpI1rcfS1rAJq3h'
+global.packname = "Re-Jeong"
+global.author = "Re-Jeong"
 global.jumlah = "5"
 
 

