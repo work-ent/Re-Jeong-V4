@@ -1,18 +1,31 @@
-{
-	"name": "Re-Jeong-v4",
-	"description": "Hello weakling",
-	"repository": "https://github.com/Re-Jeong01/Re-Jeong-v4",
-	"logo": "https://telegra.ph/file/019207dd7bf306d343b7e.jpg",
-	"keywords": ["multi-device"],
-"buildpacks": [
-      {
-        "url": "heroku/nodejs"
-    },
+
+  "name": "Re-Jeong-v4",
+  "description": "Deploy yours Re-Jeong-v4",
+  "keywords": [
+    "bot",
+    "whatsapp",
+    "whatsapp-stickers",
+    "anime",
+    "whatsapp-bot",
+    "whatsapp-sticker-bot",
+    "whatsapp-botto",
+    "baileys",
+    "baileys-md",
+    "md-bot"
+  ],
+  "website": "https://github.com/Re-Jeong01/Re-Jeong-v4#readme",
+  "repository": "https://github.com/Re-Jeong01/Re-Jeong-v4.git",
+  "logo": "https://telegra.ph/file/019207dd7bf306d343b7e.jpg",
+  "success_url": "/",
+  "buildpacks": [
     {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+      "url": "heroku/nodejs"
     },
     {
       "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
-          }
-     ]
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    }
+  ]
 }
