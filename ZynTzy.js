@@ -1374,19 +1374,23 @@ mediaUrl: anup3k.url,
 break
 
 case 'chat':
-if (!text) return reply(`Please provide a message to chat with the AI chatbot. Example: ${prefix}chat How are you?`);
-let d = await fetchJson(
-https://bk9.fun/ai/gptt4?q=${text}`
-);
-if (!d.BK9) {
-return reply(
-"An error occurred while fetching the AI chatbot response. Please try again later."
-);
-} else {
-reply(d.BK9);
-}
-}
-break;
+      case 'gpt':
+      {
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        if (!text) return reply(`Please provide a message to chat with the AI chatbot. Example: ${prefix}chat How are you?`);
+          let d = await fetchJson(
+            `https://bk9.fun/ai/gptt4?q=${text}`
+          );
+          if (!d.BK9) {
+            return reply(
+              "An error occurred while fetching the AI chatbot response. Please try again later."
+            );
+          } else {
+            reply(d.BK9);
+          }
+        }
+        break;
 		
 default:
 }
