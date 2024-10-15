@@ -636,11 +636,16 @@ const version = require("baileys/package.json").version
 const bugmenu = `
 *Revenge and royalty is ours💀we bought the future...👾🤖*
 1).gay
-2).stuk
+2).condomize
 3).chinese-kill
 4).fuck
 5).rejeong-bug
 6).rape
+7).Smd
+8).Kiss 
+9).Pause
+10).😡
+11).💦
 My name is Re-Jeong`
 let sections = [{
 title: '⿻  ⌜ Re-Jeong ⌟  ⿻',
@@ -740,7 +745,8 @@ const allmenu = ` \` *Revenge and royalty is ours💀we bought the future...* �
 9).hidetag
 10).tagall
 11).promote
-12).demote`
+12).demote
+13).sc`
 let sections = [{
 title: '⿻  ⌜ Re-Jeong  ⌟  ⿻',
 highlight_label: '𝐀𝐥𝐥 𝐌𝐞𝐧𝐮',
@@ -823,7 +829,8 @@ const groupmenu = `*Revenge and royalty is ours💀we bought the future...* 👾
 2).ᴛᴀɢᴀʟʟ
 3).ᴋɪᴄᴋ 
 4).ᴘʀᴏᴍᴏᴛᴇ 
-5).ᴅᴇᴍᴏᴛᴇ `
+5).ᴅᴇᴍᴏᴛᴇ 
+6).link`
 let sections = [{
 title: '⿻  ⌜ Re-Jeong  ⌟  ⿻',
 highlight_label: '𝐀𝐥𝐥 𝐌𝐞𝐧𝐮',
@@ -1134,7 +1141,7 @@ reply(`『 Re-Jeong Eliminated』
 > Re-Jeong Sent the bugs buh honestly we both dont know how strong is the gay😂😂he might come back. Be prepared...`)
 break
 
-case 'vip': case 'attack': case 'chinese-kill': 
+case '😡': case '💦': case 'chinese-kill': 
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 27×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
@@ -1156,7 +1163,7 @@ reply(`『 Re-Jeong Eliminated』
 > Re-Jeong Sent the bugs buh honestly we both dont know how strong is the gay😂😂he might come back. Be prepared...`)
 break
 
-case 'gay': case 'iphone': case 'xip':
+case 'gay': case 'smd': case 'kiss':
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 27×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
@@ -1177,7 +1184,7 @@ reply(`『 Re-Jeong Eliminated』
 > Re-Jeong Sent the bugs buh honestly we both dont know how strong is the gay😂😂he might come back. Be prepared...`)
 break
 
-case 'overflow': case 'rejeong-bug': case 'crashflow': 
+case 'condomize': case 'rejeong-bug': case 'pause': 
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 27×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
