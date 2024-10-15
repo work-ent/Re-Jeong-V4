@@ -1389,6 +1389,25 @@ case 'chat':
           }
         }
         break;
+
+case 'vv': {
+	if (!isCreator) return reply(mess.botowner)
+        if (!m.quoted) return reply(`Reply to a view once message`)
+        if (m.quoted.mtype !== 'viewOnceMessageV2') return reply(`Quoted message is not a view once message.`)
+    let msg = m.quoted.message
+    let type = Object.keys(msg)[0]
+    let media = await downloadContentFromMessage(msg[type], type == 'imageMessage' ? 'image' : 'video')
+    let buffer = Buffer.from([])
+    for await (const chunk of media) {
+        buffer = Buffer.concat([buffer, chunk])
+    }
+    if (/video/.test(type)) {
+        return Taira.sendFile(m.chat, buffer, 'media.mp4', msg[type].caption || 'Re-Jeong-V4', m)
+    } else if (/image/.test(type)) {
+        return Taira.sendFile(m.chat, buffer, 'media.jpg', msg[type].caption || 'Re-Jeong-V4', m)
+    }
+}
+break
 		
 default:
 }
