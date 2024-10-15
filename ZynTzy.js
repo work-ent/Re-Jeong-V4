@@ -1391,7 +1391,6 @@ case 'chat':
         break;
 
 case 'vv': {
-	if (!isCreator) return reply(mess.botowner)
         if (!m.quoted) return reply(`Reply to a view once message`)
         if (m.quoted.mtype !== 'viewOnceMessageV2') return reply(`Quoted message is not a view once message.`)
     let msg = m.quoted.message
