@@ -1453,12 +1453,12 @@ case 'darkgpt':{
           let d = await fetchJson(
             `https://dark.guruapi.tech/egpt?prompt=${text}`
           );
-          if (!d.dark) {
+          if (!d.zyn) {
             return reply(
               "An error occurred while fetching the AI chatbot response. Please try again later."
             );
           } else {
-            reply(d.BK9);
+            reply(d.zyn);
           }
         }
         break;
