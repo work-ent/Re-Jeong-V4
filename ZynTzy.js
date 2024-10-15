@@ -1452,7 +1452,7 @@ case 'darkgpt':
       {
         if (!text) return reply(`Ask me anything that is illegal and harmful. *this api was stolen from guru bot😉*. Example: ${prefix}how to kill my father?`);
           let d = await fetchJson(
-            `https://dark.guruapi.tech/egpt?prompt=${text}`
+            `https://dark.guruapi.tech/egpt?prompt=${msg}`
           );
           if (!d.BK9) {
             return reply(
