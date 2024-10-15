@@ -1219,23 +1219,23 @@ break
 
 case "addowner":
 if (!isOwner) return reply(mess.only.owner)
-if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 27×××`)
+if (!args[0]) return reply(`Example ${prefix+command} nomor\nContoh ${prefix+command} 27×××`)
 bnnd = q.split("|")[0].replace(/[^0-9]/g, '')
 let ceknye = await zyn.onWhatsApp(bnnd + `@s.whatsapp.net`)
 if (ceknye.length == 0) return reply(`number not valid!!!`)
 ownerNumber.push(bnnd)
 fs.writeFileSync('./database/dtbs/owner.json', JSON.stringify(ownerNumber))
-reply(`Nomor ${bnnd} Telah Menjadi Owner!!!`)
+reply(`User ${bnnd} is now owner Owner!!!`)
 break
 
 case "delowner":
 if (!isOwner) return reply(mess.only.owner)
-if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 27×××`)
+if (!args[0]) return reply(`Example ${prefix+command} nomor\nContoh ${prefix+command} 27×××`)
 ya = q.split("|")[0].replace(/[^0-9]/g, '')
 unp = ownerNumber.indexOf(ya)
 ownerNumber.splice(unp, 1)
 fs.writeFileSync('./database/dtbs/owner.json', JSON.stringify(ownerNumber))
-reply(`Nomor ${ya} Telah Di Hapus Owner!!!`)
+reply(`User ${ya} nolonger the Owner!!!`)
 break
 
 case 'setowner': {
@@ -1255,24 +1255,24 @@ break
 
 case "addprem":{
 if (!isOwner) return reply(mess.only.owner)
-if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 27×××`)
+if (!args[0]) return reply(`Example ${prefix+command} nomor\nContoh ${prefix+command} 27×××`)
 prrkek = q.split("|")[0].replace(/[^0-9]/g, '')+`@s.whatsapp.net`
 let ceknya = await zyn.onWhatsApp(prrkek)
 if (ceknya.length == 0) return reply(`number not valid!!`)
 prem.push(prrkek)
 fs.writeFileSync("./database/dtbs/premium.json", JSON.stringify(prem))
-reply(`Nomor ${prrkek} Telah Menjadi Premium!`)
+reply(`User ${prrkek} is now Premium!`)
 }
 break
 
 case "delprem":{
 if (!isOwner) return reply(mess.only.owner)
-if (!args[0]) return reply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} 27×××`)
+if (!args[0]) return reply(`Example ${prefix+command} nomor\nContoh ${prefix+command} 27×××`)
 ya = q.split("|")[0].replace(/[^0-9]/g, '')+`@s.whatsapp.net`
 unp = prem.indexOf(ya)
 prem.splice(unp, 1)
 fs.writeFileSync("./database/dtbs/premium.json", JSON.stringify(prem))
-reply(`Nomor ${ya} Telah Di Hapus Premium!`)
+reply(`User ${ya} nolonger Premium!`)
 }
 break
 
