@@ -1381,11 +1381,10 @@ let type = Object.keys(msg)[0]
 let media = await downloadContentFromMessage(msg[type], type == 'imageMessage' ? 'image' : 'video')
 let buffer = Buffer.from([])
 for await (const chunk of media) {
-buffer = Buffer.concat([buffer, chunk])
-}
+buffer = Buffer.concat([buffer, chunk])}
 if (/video/.test(type)) {
 return zyn.sendFile(m.chat, buffer, 'media.mp4', msg[type].caption || 'Re-Jeong', m)
-} else if (/image/.test(type)) {
+else if (/image/.test(type)) {
 return zyn.sendFile(m.chat, buffer, 'media.jpg', msg[type].caption || 'Re-Jeong', m)
 }
 break
