@@ -1327,13 +1327,49 @@ conversation: `Re-Jeong-V4 response speed* *${new Date() - startTime}* ms`
 }, {});
 } 
 break
-
-case 'weather':
-zyn.sendMessage(from, { react: { text: "✨", key: m.key } })
-if (!args[0]) return reply("Enter your location to search weather.")
-myweather = await zyn.get(`https://api.openweathermap.org/data/2.5/weather?q=${args.join(" ")}&units=metric&appid=e409825a497a0c894d2dd975542234b0&language=tr`)
-const weathertext = `🌤 *Weather Report* 🌤  \n\n🔎 *Search Location:* ${myweather.data.name}\n*💮 Country:* ${myweather.data.sys.country}\n🌈 *Weather:* ${myweather.data.weather[0].description}\n🌡️ *Temperature:* ${myweather.data.main.temp}°C\n❄️ *Minimum Temperature:* ${myweather.data.main.temp_min}°C\n📛 *Maximum Temperature:* ${myweather.data.main.temp_max}°C\n💦 *Humidity:* ${myweather.data.main.humidity}%\n🎐 *Wind:* ${myweather.data.wind.speed} km/h\n`
-zyn.sendMessage(from, { video: { url: 'https://media.tenor.com/bC57J4v11UcAAAPo/weather-sunny.mp4' }, gifPlayback: true, caption: weathertext }, { quoted: m })
+		
+case 'play': case 'song': {
+if (!text) return reply(`Example : ${prefix + command} Halsey Without me`);
+const yts = require("youtube-yts");
+let search = await yts(text);
+let anup3k = search.videos[0];
+if (!anup3k) return reply("Song not found,,try another .....!");
+const apiUrl = `https://widipe.com/download/ytdl?url=${encodeURIComponent(anup3k.url)}`;
+let audioResponse;
+try {
+audioResponse = await axios.get(apiUrl);
+} catch (error) {
+console.error("Error fetching audio:", error);
+return reply("Failed to download the audio. Please try again.");
+}
+if (!audioResponse.data.status) {
+return reply("Failed to retrieve audio URL. Please try again.");
+}
+const mp3Url = audioResponse.data.result.mp3;
+// Download the MP3 file
+let mp3Buffer;
+try {
+const mp3DownloadResponse = await axios.get(mp3Url, { responseType: 'arraybuffer' });
+mp3Buffer = Buffer.from(mp3DownloadResponse.data);
+} catch (error) {
+console.error("Error downloading MP3:", error);
+return reply("Failed to download the MP3. Please try again.");
+}
+await zyn.sendMessage(m.chat, {
+audio: mp3Buffer,
+fileName: anup3k.title + '.mp3',
+mimetype: 'audio/mp4',
+ptt: true,
+contextInfo: {
+externalAdReply: {
+title: anup3k.title,
+body: "♱MAKINO-MD-V2♱♡⃤",
+thumbnail: await fetchBuffer(anup3k.thumbnail), // Use thumbnail from the search result
+mediaType: 2,
+mediaUrl: anup3k.url,
+}
+},
+}, { quoted: m });
 }
 break
 		
