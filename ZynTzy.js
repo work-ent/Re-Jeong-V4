@@ -1309,6 +1309,22 @@ case "alive":{
 zyn.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/019207dd7bf306d343b7e.jpg' }, caption: `Hey @ ${m.pushName}, Re-Jeong Has been alive since  ${runtime(process.uptime())}`, fileLength: "9999999999898989899999999" }, { quoted: m }); 
 }
 break
+
+case 'ping':{
+zyn.sendMessage(from, { react: { text: "💀", key: m.key } })
+const startTime = new Date();
+const pingMsg = await zyn.sendMessage(m.chat, { text: 'Re-Jeong...*' }, { quoted: m });
+await zyn.relayMessage(m.chat, {
+protocolMessage: {
+key: pingMsg.key,
+type: 14,
+editedMessage: {
+conversation: `Re-Jeong-V4 response speed* *${new Date() - startTime}* ms`
+}
+}
+}, {});
+} 
+break
 		
 default:
 }
