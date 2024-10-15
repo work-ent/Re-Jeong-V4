@@ -1283,6 +1283,12 @@ reply('Succes Mode Public')
 }
 break
 
+case 'sc': case 'script': case 'repo':{
+zyn.sendMessage(m.chat, { image: { url: `https://telegra.ph/file/019207dd7bf306d343b7e.jpg` }, caption: 
+`👋🏻 Hello *${pushname}*, Unfortunately you can't get the sc\n\nEnjoy and have fun with me😜!\n\nMy owner is Re-Jeong Guanxii!` });
+}
+break
+
 default:
 }
 if (budy.startsWith('$')) {
