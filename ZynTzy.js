@@ -1376,8 +1376,6 @@ break
 case 'chat':
       case 'gpt':
       {
-        if (isBan) return reply(mess.banned);
-        if (isBanChat) return reply(mess.bangc);
         if (!text) return reply(`Please provide a message to chat with the AI chatbot. Example: ${prefix}chat How are you?`);
           let d = await fetchJson(
             `https://bk9.fun/ai/gptt4?q=${text}`
