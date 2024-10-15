@@ -1373,21 +1373,20 @@ mediaUrl: anup3k.url,
 }
 break
 
-case 'vv':{
-if (!m.quoted) return reply(`Reply to a view once message`)
-if (m.quoted.mtype !== 'viewOnceMessageV2') return reply(`Quoted message is not a view once message.`)
-let msg = m.quoted.message
-let type = Object.keys(msg)[0]
-let media = await downloadContentFromMessage(msg[type], type == 'imageMessage' ? 'image' : 'video')
-let buffer = Buffer.from([])
-for await (const chunk of media) {
-buffer = Buffer.concat([buffer, chunk])}
-if (/video/.test(type)) {
-return zyn.sendFile(m.chat, buffer, 'media.mp4', msg[type].caption || 'Re-Jeong', m)
-else if (/image/.test(type)) {
-return zyn.sendFile(m.chat, buffer, 'media.jpg', msg[type].caption || 'Re-Jeong', m)
+case 'chat':
+if (!text) return reply(`Please provide a message to chat with the AI chatbot. Example: ${prefix}chat How are you?`);
+let d = await fetchJson(
+https://bk9.fun/ai/gptt4?q=${text}`
+);
+if (!d.BK9) {
+return reply(
+"An error occurred while fetching the AI chatbot response. Please try again later."
+);
+} else {
+reply(d.BK9);
 }
-break
+}
+break;
 		
 default:
 }
