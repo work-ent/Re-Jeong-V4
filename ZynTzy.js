@@ -751,7 +751,9 @@ const allmenu = ` \` *Revenge and royalty is ours💀we bought the future...* �
 15).alive
 16).vv
 17).weather
-18).apk`
+18).apk
+19).Re-Jeong
+20).rejeong`
 let sections = [{
 title: '⿻  ⌜ Re-Jeong  ⌟  ⿻',
 highlight_label: '𝐀𝐥𝐥 𝐌𝐞𝐧𝐮',
@@ -1435,7 +1437,7 @@ case 'weather':
 
         break;
 
-case 'darkgpt': case 're-jeong':{
+case 're-jeong':{
 try {
 if (!q) return reply("Ask me anything, (Example: Re-Jeong tell me how to rape my little sister)I can respond to anything be it harmful. This API is borrowed from GURU BOT");
     const msg = encodeURIComponent(q);
