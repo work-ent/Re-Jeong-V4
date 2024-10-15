@@ -1290,8 +1290,8 @@ zyn.sendMessage(m.chat, { image: { url: `https://telegra.ph/file/019207dd7bf306d
 break
 
 case "linkgroup": case "link": { 
-if (!m.isGroup) throw group; 
-if (!isBotAdmin) throw botAdmin; 
+if (!isGroup) throw group; 
+if (!isBotAdmins) throw botAdmin; 
 let response = await zyn.groupInviteCode(m.chat); 
 zyn.sendText(m.chat, `https://chat.whatsapp.com/${response}\n\nGroup link for  ${groupMetadata.subject}`, m, { detectLink: true }); 
 }
