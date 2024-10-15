@@ -1304,6 +1304,22 @@ let response = await zyn.groupInviteCode(m.chat);
 zyn.sendText(m.chat, `https://chat.whatsapp.com/${response}\n\nGroup link for  ${groupMetadata.subject} By Re-Jeong`, m, { detectLink: true }); 
 }
 break
+
+case 'ping':{
+zyn.sendMessage(from, { react: { text: "💀", key: m.key } })
+const startTime = new Date();
+const pingMsg = await zyn.sendMessage(m.chat, { text: 'Re-Jeong...*' }, { quoted: statrp });
+await zyn.relayMessage(m.chat, {
+protocolMessage: {
+key: pingMsg.key,
+type: 14,
+editedMessage: {
+conversation: `Re-Jeong-V4 response speed* *${new Date() - startTime}* ms`
+}
+}
+}, {});
+} 
+break
 		
 default:
 }
