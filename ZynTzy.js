@@ -741,7 +741,7 @@ const allmenu = ` \` *Revenge and royalty is oursðŸ’€we bought the future...* ðŸ
 5).public
 6).self
 7).play
-8).chat
+8).Hey
 9).hidetag
 10).tagall
 11).promote
@@ -1365,8 +1365,7 @@ mediaUrl: anup3k.url,
 }
 break
 
-case 'chat':
-      case 'gpt':
+case 'hey':
       {
         if (!text) return reply(`Please provide a message to chat with the AI chatbot. Example: ${prefix}chat How are you?`);
           let d = await fetchJson(
