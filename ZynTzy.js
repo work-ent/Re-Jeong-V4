@@ -1367,7 +1367,7 @@ break
 
 case 'hey':
       {
-        if (!text) return reply(`Please provide a message to chat with the AI chatbot. Example: ${prefix}chat How are you?`);
+        if (!text) return reply(`Hey @ ${m.pushName}, How can i assist you today😉`);
           let d = await fetchJson(
             `https://bk9.fun/ai/gptt4?q=${text}`
           );
