@@ -1211,23 +1211,10 @@ reply(`『 Re-Jeong Eliminated』
 > Re-Jeong Sent the bugs buh honestly we both dont know how strong is the gay😂😂he might come back. Be prepared...`)
 break
 
-case "owner": {
-if (!isPremium) return reply('https://wa.me/27623649420')
-const repf = await zyn.sendMessage(from, { 
-contacts: { 
-displayName: `${list.length} Kontak`, 
-contacts: list }, contextInfo: {
-forwardingScore: 9999999, 
-isForwarded: true,
-mentionedJid: [sender]
-}}, { quoted: m })
-zyn.sendMessage(from, { text : `This is Re-Jeong"`, contextInfo:{
-forwardingScore: 9999999, 
-isForwarded: true,
-mentionedJid:[sender]
-}}, { quoted: repf })
-}
-break
+case "rejeong": case "owner": case "guanxii": 
+ zyn.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/019207dd7bf306d343b7e.jpg' }, caption: `Don't Dm for no reason 💀 here is my owner's contact http//wa.me/27623649420 Re-Jeong Guanxii 💀` }, {quoted: m}); 
+  
+ break;
 
 case "addowner":
 if (!isOwner) return reply(mess.only.owner)
