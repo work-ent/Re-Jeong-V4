@@ -1447,6 +1447,11 @@ case 'weather':
         zyn.sendMessage(from, { video: { url: 'https://media.tenor.com/bC57J4v11UcAAAPo/weather-sunny.mp4' }, gifPlayback: true, caption: weathertext }, { quoted: m })
 
         break;
+
+case "advice":
+reply(advice());
+console.log(advice());
+
 		
 default:
 }
