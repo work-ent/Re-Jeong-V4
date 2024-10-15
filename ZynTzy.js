@@ -1289,13 +1289,12 @@ zyn.sendMessage(m.chat, { image: { url: `https://telegra.ph/file/019207dd7bf306d
 }
 break
 
-case "linkgroup": case "link": { 
-zyn.sendMessage(m.chat, { image: { url: `https://telegra.ph/file/019207dd7bf306d343b7e.jpg` }, caption: 
+case "linkgroup": case "link":{ 
 if (!isGroup) return reply('Only Group')
 if (!isAdmins && !isOwner) return reply('Only Admin')
 if (!isBotAdmins) return reply(`Bot not admin :(`)
 let response = await zyn.groupInviteCode(m.chat); 
-zyn.sendText(m.chat, `https://chat.whatsapp.com/${response}\n\nGroup link for  ${groupMetadata.subject} By Re-Jeong`, m, { detectLink: true }); 
+zyn.sendText(m.chat, { image: { url: `https://telegra.ph/file/019207dd7bf306d343b7e.jpg` }, caption:  `https://chat.whatsapp.com/${response}\n\nGroup link for  ${groupMetadata.subject} By Re-Jeong`, m, { detectLink: true }); 
 }
 break
 		
