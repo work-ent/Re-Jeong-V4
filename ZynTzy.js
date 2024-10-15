@@ -741,7 +741,7 @@ const allmenu = ` \` *Revenge and royalty is ours💀we bought the future...* �
 5).public
 6).self
 7).play
-8).Hey
+8).hi
 9).hidetag
 10).tagall
 11).promote
@@ -1365,7 +1365,7 @@ mediaUrl: anup3k.url,
 }
 break
 
-case 'hey':
+case 'hi':
       {
         if (!text) return reply(`Hey @ ${m.pushName}, How can i assist you today😉`);
           let d = await fetchJson(
