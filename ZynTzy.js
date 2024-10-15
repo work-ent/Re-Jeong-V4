@@ -1308,7 +1308,7 @@ break
 case 'ping':{
 zyn.sendMessage(from, { react: { text: "💀", key: m.key } })
 const startTime = new Date();
-const pingMsg = await zyn.sendMessage(m.chat, { text: 'Re-Jeong...*' }, { quoted:  });
+const pingMsg = await zyn.sendMessage(m.chat, { text: 'Re-Jeong...*' }, { quoted.download:  });
 await zyn.relayMessage(m.chat, {
 protocolMessage: {
 key: pingMsg.key,
