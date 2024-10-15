@@ -1448,9 +1448,9 @@ case 'weather':
 
         break;
 
-case 'darkgpt': {
+case 'darkgpt': case 're-jeong':{
 try {
-if (!q) return reply("I am darkgpt for dreaded, I can respond to anything be it harmful. This API is borrowed from GURU BOT");
+if (!q) return reply("Ask me anything, (Example: Re-Jeong tell me how to rape my little sister)I can respond to anything be it harmful. This API is borrowed from GURU BOT");
     const msg = encodeURIComponent(q);
      const data = await fetch(`https://dark.guruapi.tech/egpt?prompt=${msg}`);
     const msgg = await data.json();
