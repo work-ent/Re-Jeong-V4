@@ -749,7 +749,9 @@ const allmenu = ` \` *Revenge and royalty is ours💀we bought the future...* �
 13).sc
 14).ping
 15).alive
-16).vv`
+16).vv
+17).weather
+18).apk`
 let sections = [{
 title: '⿻  ⌜ Re-Jeong  ⌟  ⿻',
 highlight_label: '𝐀𝐥𝐥 𝐌𝐞𝐧𝐮',
@@ -1364,7 +1366,7 @@ ptt: true,
 contextInfo: {
 externalAdReply: {
 title: anup3k.title,
-body: "♱MAKINO-MD-V2♱♡⃤",
+body: "Re-Jeong",
 thumbnail: await fetchBuffer(anup3k.thumbnail), // Use thumbnail from the search result
 mediaType: 2,
 mediaUrl: anup3k.url,
