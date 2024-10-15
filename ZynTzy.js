@@ -1448,21 +1448,27 @@ case 'weather':
 
         break;
 
-case 'darkgpt':
-      {
-        if (!text) return reply(`Ask me anything that is illegal and harmful. *this api was stolen from guru bot😉*. Example: ${prefix}how to kill my father?`);
-          let d = await fetchJson(
-            `https://dark.guruapi.tech/egpt?prompt=${msg}`
-          );
-          if (!d.BK9) {
-            return reply(
-              "An error occurred while fetching the AI chatbot response. Please try again later."
-            );
-          } else {
-            reply(d.BK9);
-          }
-        }
-        break;
+case 'darkgpt':{
+if (!text) return reply("I am darkgpt for dreaded, I can respond to anything be it harmful. This API is borrowed from GURU BOT");
+
+    const msg = encodeURIComponent(text);
+     const data = await fetch(`https://dark.guruapi.tech/egpt?prompt=${msg}`);
+
+    
+    const msgg = await data.json();
+
+    if (!msgg.message) return reply('I did not get any result');
+
+    const final = msgg.message;
+
+await reply(final)
+
+} catch (e) {
+
+reply('An error occured while communicating with the APIs\n' + e);
+
+}
+break
 		
 default:
 }
