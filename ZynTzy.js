@@ -1448,9 +1448,11 @@ case 'weather':
 
         break;
 
-case "advice":
+case "advice":{
 reply(advice());
 console.log(advice());
+}
+break
 
 		
 default:
