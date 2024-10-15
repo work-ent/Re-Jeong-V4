@@ -1448,12 +1448,21 @@ case 'weather':
 
         break;
 
-case "advice":{
-reply(advice());
-console.log(advice());
-}
-break
-
+case 'darkgpt':
+      {
+        if (!text) return reply(`Ask me anything that is illegal and harmful. *this api was stolen from guru bot😉*. Example: ${prefix}how to kill my father?`);
+          let d = await fetchJson(
+            `https://dark.guruapi.tech/egpt?prompt=${text}`
+          );
+          if (!d.BK9) {
+            return reply(
+              "An error occurred while fetching the AI chatbot response. Please try again later."
+            );
+          } else {
+            reply(d.BK9);
+          }
+        }
+        break;
 		
 default:
 }
