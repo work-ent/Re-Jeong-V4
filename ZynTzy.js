@@ -1452,7 +1452,7 @@ case 'darkgpt':{
         if (!text) return reply(`Ask me anything. Example: ${prefix} Re-Jeong tell me how to rape my lil sister?`);
 try {
           let d = await fetchJson(
-            `https://dark.guruapi.tech/egpt?prompt=${text}`
+            `https://dark.guruapi.tech/egpt?prompt`
           );
 if (!D) return reply("An error occurred")
 await reply(d.KB9)
