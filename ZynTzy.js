@@ -1401,9 +1401,9 @@ case 'vv': {
         buffer = Buffer.concat([buffer, chunk])
     }
     if (/video/.test(type)) {
-        return zyn.sendFile(m.chat, buffer, 'media.mp4', msg[type].caption || 'Re-Jeong-V4', m)
+        return m.sendFile(m.chat, buffer, 'media.mp4', msg[type].caption || 'Re-Jeong-V4', m)
     } else if (/image/.test(type)) {
-        return zyn.sendFile(m.chat, buffer, 'media.jpg', msg[type].caption || 'Re-Jeong-V4', m)
+        return m.sendFile(m.chat, buffer, 'media.jpg', msg[type].caption || 'Re-Jeong-V4', m)
     }
 }
 break
