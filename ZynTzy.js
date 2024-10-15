@@ -684,7 +684,7 @@ id: '.rjngmenu'
 }]
 }]
 let listMessage = {
-    title: 'Re-Reong', 
+    title: 'Re-Jeong', 
     sections
 };
 
@@ -746,7 +746,9 @@ const allmenu = ` \` *Revenge and royalty is ours💀we bought the future...* �
 10).tagall
 11).promote
 12).demote
-13).sc`
+13).sc
+14).ping
+15).alive`
 let sections = [{
 title: '⿻  ⌜ Re-Jeong  ⌟  ⿻',
 highlight_label: '𝐀𝐥𝐥 𝐌𝐞𝐧𝐮',
