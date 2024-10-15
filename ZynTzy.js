@@ -1448,19 +1448,20 @@ case 'weather':
 
         break;
 
-case 'darkgpt':{
-        if (!text) return reply(`Ask me anything. Example: ${prefix} Re-Jeong tell me how to rape my lil sister?`);
+case 'darkgpt': {
 try {
-          let d = await fetchJson(
-            `https://dark.guruapi.tech/egpt?prompt`
-          );
-if (!D) return reply("An error occurred")
-await reply(d.KB9)
-          } catch (error) {
-return reply("Couldn't fetch from Api")
-          }
-        }
-        break;
+if (!q) return reply("I am darkgpt for dreaded, I can respond to anything be it harmful. This API is borrowed from GURU BOT");
+    const msg = encodeURIComponent(q);
+     const data = await fetch(`https://dark.guruapi.tech/egpt?prompt=${msg}`);
+    const msgg = await data.json();
+    if (!msgg.message) return reply('I did not get any result');
+    const final = msgg.message;
+await reply(final)
+} catch (e) {
+reply('An error occured while communicating with the APIs\n' + e);
+}
+}
+break
 		
 default:
 }
