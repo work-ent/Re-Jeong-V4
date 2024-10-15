@@ -1450,15 +1450,14 @@ case 'weather':
 
 case 'darkgpt':{
         if (!text) return reply(`Ask me anything. Example: ${prefix} Re-Jeong tell me how to rape my lil sister?`);
+try {
           let d = await fetchJson(
             `https://dark.guruapi.tech/egpt?prompt=${text}`
           );
-          if (!d.zyn) {
-            return reply(
-              "An error occurred while fetching the AI chatbot response. Please try again later."
-            );
-          } else {
-            reply(d.zyn);
+if (!D) return reply("An error occurred")
+await reply(d.KB9)
+          } catch (error) {
+return reply("Couldn't fetch from Api")
           }
         }
         break;
