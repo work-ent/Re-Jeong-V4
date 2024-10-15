@@ -1305,9 +1305,9 @@ zyn.sendText(m.chat, `https://chat.whatsapp.com/${response}\n\nGroup link for  $
 }
 break
 		
-case "ping": case "speed":{
-reply (`*Re-Jeong speed is : ${dreadedspeed.toFixed(4)} _𝐦𝐬_*`); 
-} 
+case "alive":{ 
+zyn.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/019207dd7bf306d343b7e.jpg' }, caption: `Hey @ ${m.pushName}, Re-Jeong Has been alive since  ${runtime(process.uptime())}`, fileLength: "9999999999898989899999999" }, { quoted: m }); 
+}
 break
 		
 default:
