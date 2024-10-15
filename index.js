@@ -94,6 +94,64 @@ zyn.groupAcceptInvite(codeInvite)
 }
 })
 
+zyn.sendFile = async (jid, path, filename = '', caption = '', quoted, ptt = false, options = {}) => {
+  let type = await zyn.getFile(path, true);
+  let { res, data: file, filename: pathFile } = type;
+
+  if (res && res.status !== 200 || file.length <= 65536) {
+    try {
+      throw {
+        json: JSON.parse(file.toString())
+      };
+    } catch (e) {
+      if (e.json) throw e.json;
+    }
+  }
+
+  let opt = {
+    filename
+  };
+
+  if (quoted) opt.quoted = quoted;
+  if (!type) options.asDocument = true;
+
+  let mtype = '',
+    mimetype = type.mime,
+    convert;
+
+  if (/webp/.test(type.mime) || (/image/.test(type.mime) && options.asSticker)) mtype = 'sticker';
+  else if (/image/.test(type.mime) || (/webp/.test(type.mime) && options.asImage)) mtype = 'image';
+  else if (/video/.test(type.mime)) mtype = 'video';
+  else if (/audio/.test(type.mime)) {
+    convert = await (ptt ? toPTT : toAudio)(file, type.ext);
+    file = convert.data;
+    pathFile = convert.filename;
+    mtype = 'audio';
+    mimetype = 'audio/ogg; codecs=opus';
+  } else mtype = 'document';
+
+  if (options.asDocument) mtype = 'document';
+
+  delete options.asSticker;
+  delete options.asLocation;
+  delete options.asVideo;
+  delete options.asDocument;
+  delete options.asImage;
+
+  let message = { ...options, caption, ptt, [mtype]: { url: pathFile }, mimetype };
+  let m;
+
+  try {
+    m = await zyn.sendMessage(jid, message, { ...opt, ...options });
+  } catch (e) {
+    //console.error(e)
+    m = null;
+  } finally {
+    if (!m) m = await zyn.sendMessage(jid, { ...message, [mtype]: file }, { ...opt, ...options });
+    file = null;
+    return m;
+  }
+	}
 zyn.ev.on('messages.upsert', async (chatUpdate) => {
 try {
 m = chatUpdate.messages[0]
