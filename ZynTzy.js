@@ -1540,7 +1540,8 @@ case 'ytsearch':
             return;
         }
         const length = videos.length < 10 ? videos.length : 10;
-        let tex = `YouTube Search\n🔍 Query ~> ${term}\n\n`;
+        const yts = require("youtube-yts");
+	let tex = `YouTube Search\n🔍 Query ~> ${term}\n\n`;
         for (let i = 0; i < length; i++) {
             tex += `Link ~> ${videos[i].url}\nChannel ~> ${videos[i].author.name}\nTitle ~> ${videos[i].title}\n\n`;
         }
