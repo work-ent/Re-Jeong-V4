@@ -1453,7 +1453,7 @@ mimetype: "audio/mp3",
  fileName: `${kyuu.result.title}.mp3`,
  contextInfo: {
         externalAdReply: {
-          title: Re-Jeong,
+          title: botname,
           body: `${search.all[0].title}`,
           thumbnailUrl: `${search.all[0].thumbnail}`,
           sourceUrl: `${telaso}`,
