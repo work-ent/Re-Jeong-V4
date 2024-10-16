@@ -1501,7 +1501,8 @@ case 'pic':
         zyn.sendMessage(from, { react: { text: "⌛", key: m.key } });
 
         if (!args[0]) return reply("Enter a search term to get Google Image!");
-        let gis = require('g-i-s');
+        const gis = require("g-i-s");
+	let gis = require('g-i-s');
         gis(args.join(" "), async (error, result) => {
           if (error) {
             console.error(error);
