@@ -1320,7 +1320,7 @@ conversation: `Re-Jeong-V4 response speed* *${new Date() - startTime}* ms`
 } 
 break
 		
-case 'play': case 'song': {
+case 'song': {
 if (!text) return reply(`Example : ${prefix + command} Halsey Without me`);
 const yts = require("youtube-yts");
 let search = await yts(text);
@@ -1355,7 +1355,7 @@ ptt: true,
 contextInfo: {
 externalAdReply: {
 title: anup3k.title,
-body: "Re-Jeong",
+body: "Re-Jeong-V4",
 thumbnail: await fetch(anup3k.thumbnail), // Use thumbnail from the search result
 mediaType: 2,
 mediaUrl: anup3k.url,
