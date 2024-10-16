@@ -1473,7 +1473,7 @@ case "video":{
 	const yts = require("youtube-yts");
 	let search = await yts(text);
 	let telaso = search.all[0].url;
-    await reply(`Please wait, downloading ${search.all[0].title} 📥...`);
+    await reply();
 	let kyuu = await fetchJson (`https://widipe.com/download/ytdl?url=${telaso}`)
 await zyn.sendMessage(m.chat, {
  document: {url: kyuu.result.mp4},
