@@ -740,7 +740,7 @@ const allmenu = ` \` *Revenge and royalty is oursğŸ’€we bought the future...* ğŸ
 4).delprem
 5).public
 6).self
-7).play
+7).song
 8).hi
 9).hidetag
 10).tagall
