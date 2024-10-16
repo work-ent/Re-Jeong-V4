@@ -1466,6 +1466,34 @@ mimetype: "audio/mp3",
     zyn.sendMessage(m.chat, { react: { text: '✅', key: m.key }})
 }
 break
+
+case "video":{
+	if (!text) return reply('Please provide a video name!');
+	const randomReduction = Math.floor(Math.random() * 5) + 1;
+	const yts = require("youtube-yts");
+	let search = await yts(text);
+	let telaso = search.all[0].url;
+    await reply(`Please wait, downloading ${search.all[0].title} 📥...`);
+	let kyuu = await fetchJson (`https://widipe.com/download/ytdl?url=${telaso}`)
+await zyn.sendMessage(m.chat, {
+ document: {url: kyuu.result.mp4},
+mimetype: "video/mp4",
+ fileName: `${search.all[0].title}.mp4`,
+ contextInfo: {
+        externalAdReply: {
+          title: 'Re-Jeong-V4',
+          body: `${search.all[0].title}`,
+          thumbnailUrl: `${search.all[0].thumbnail}`,
+          sourceUrl: `${telaso}`,
+          mediaType: 2,
+          showAdAttribution: true,
+          renderLargerThumbnail: false
+        }
+      }
+    }, { quoted: m });
+    zyn.sendMessage(m.chat, { react: { text: '✅', key: m.key }})
+}
+break
 		
 default:
 }
