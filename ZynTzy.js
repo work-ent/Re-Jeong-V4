@@ -722,9 +722,9 @@ const allmenu = ` \` *Revenge and royalty is ours💀we bought the future...* �
  #𝐍𝐚𝐦𝐞 : ${pushname}
  #𝐁𝐨𝐭 : Re-Jeong v4
  
-1).addowner
+1).img
 2).addprem
-3).delowner
+3).video
 4).delprem
 5).public
 6).self
@@ -1494,6 +1494,36 @@ mimetype: "video/mp4",
     zyn.sendMessage(m.chat, { react: { text: '✅', key: m.key }})
 }
 break
+
+case 'pic':
+      case 'img':
+      case 'image': {
+        zyn.sendMessage(from, { react: { text: "⌛", key: m.key } });
+
+        if (!args[0]) return reply("Enter a search term to get Google Image!");
+        let gis = require('g-i-s');
+        gis(args.join(" "), async (error, result) => {
+          if (error) {
+            console.error(error);
+            return reply("Error occurred while searching for images.");
+          }
+
+          if (!result || result.length === 0) {
+            return reply("No images found for the given search term.");
+          }
+
+          n = result;
+          images = n[Math.floor(Math.random() * n.length)].url;
+          let buttonMessage = {
+            image: { url: images },
+            caption: `「 _Google Image Search_ 」\n\n_Search Term_ : ${text}\n_Media Url_ : ${images}`,
+            footer: `${global.BotName}`,
+            headerType: 4,
+          };
+          zyn.sendMessage(m.chat, buttonMessage, { quoted: m });
+        });
+      }
+        break;
 		
 default:
 }
