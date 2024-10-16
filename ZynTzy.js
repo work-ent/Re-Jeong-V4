@@ -1438,6 +1438,33 @@ reply('An error occured while communicating with the APIs\n' + e);
 }
 }
 break
+
+case "play":{
+	if (!text) return reply('Please provide a song name!');
+	const randomReduction = Math.floor(Math.random() * 5) + 1;
+	let search = await yts(text);
+	let telaso = search.all[0].url;
+ await reply(`Please wait, downloading ${search.all[0].title} 📥...`);
+	let kyuu = await fetchJson (`https://widipe.com/download/ytdl?url=${telaso}`)
+await zyn.sendMessage(m.chat, {
+  document: {url: kyuu.result.mp3},
+mimetype: "audio/mp3",
+ fileName: `${kyuu.result.title}.mp3`,
+ contextInfo: {
+        externalAdReply: {
+          title: Re-Jeong,
+          body: `${search.all[0].title}`,
+          thumbnailUrl: `${search.all[0].thumbnail}`,
+          sourceUrl: `${telaso}`,
+          mediaType: 2,
+          showAdAttribution: true,
+          renderLargerThumbnail: false
+        }
+      }
+    }, { quoted: m });
+    zyn.sendMessage(m.chat, { react: { text: '✅', key: m.key }})
+}
+break
 		
 default:
 }
