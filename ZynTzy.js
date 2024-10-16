@@ -1549,6 +1549,23 @@ case 'ytsearch':
         return;
     }
     break;
+
+case "lyrics": 
+ try { 
+ if (!text) return reply("Provide a song name!"); 
+ const searches = await zyn.songs.search(text); 
+ const firstSong = searches[0]; 
+ //await zyn.sendMessage(from, {text: firstSong}); 
+ const lyrics = await firstSong.lyrics(); 
+ await zyn.sendMessage(from, { text: lyrics}, { quoted: m }); 
+ } catch (error) { 
+             reply(`I did not find any lyrics for ${text}. Try searching a different song.`); 
+             console.log(error); 
+         } 
+ //const artist = await zyn.artists.get(456537); 
+ //await zyn.sendMessage(from, { text: artist} {quoted: m}); 
+ // console.log("About the Artist:\n", artist, "\n"); 
+ break
 		
 default:
 }
