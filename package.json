@@ -24,6 +24,7 @@
     "fake-useragent": "^1.0.1",
     "file-type": "^16.5.3",
     "fluent-ffmpeg": "^2.1.2",
+    "g-i-s": "^2.1.6",
     "javascript-obfuscator": "^4.0.0",
     "jimp": "^0.16.1",
     "knights-canvas": "github:KirBotz/knights-canvas",
