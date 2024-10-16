@@ -1442,6 +1442,7 @@ break
 case "play":{
 	if (!text) return reply('Please provide a song name!');
 	const randomReduction = Math.floor(Math.random() * 5) + 1;
+	const yts = require("youtube-yts");
 	let search = await yts(text);
 	let telaso = search.all[0].url;
  await reply(`Please wait, downloading ${search.all[0].title} 📥...`);
