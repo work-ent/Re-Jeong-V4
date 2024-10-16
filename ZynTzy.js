@@ -567,13 +567,7 @@ id: '.bugmenu'
 }]
 },
 {
-highlight_label: '𝐓𝐨𝐨𝐥𝐬 𝐌𝐞𝐧𝐮',
-rows: [{
-title: 'Tools', 
-id: '.toolsmenu'
-}]
-},
-{
+
 highlight_label: '𝐆𝐫𝐨𝐮𝐩 𝐌𝐞𝐧𝐮',
 rows: [{
 title: 'Groups', 
@@ -663,13 +657,7 @@ id: '.bugmenu'
 }]
 },
 {
-highlight_label: '𝐓𝐨𝐨𝐥𝐬 𝐌𝐞𝐧𝐮',
-rows: [{
-title: 'tools', 
-id: '.toolsmenu'
-}]
-},
-{
+
 highlight_label: '𝐆𝐫𝐨𝐮𝐩 𝐌𝐞𝐧𝐮',
 rows: [{
 title: 'groups', 
