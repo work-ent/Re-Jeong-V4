@@ -16,7 +16,7 @@
 
 
 */
-module.exports = async (zyn, m, store, rejeong) => {
+module.exports = async (zyn, m, store) => {
 try {
 const from = m.key.remoteJid
 const quoted = m.quoted ? m.quoted : m
