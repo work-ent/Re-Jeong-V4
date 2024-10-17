@@ -60,7 +60,7 @@ const xbug = fs.readFileSync(`./database/image/xbug.jpg`)
 const Xynz = fs.readFileSync(`./database/image/Xynz.jpg`) 
 const zkosong = fs.readFileSync(`./database/image/zkosong.png`)
 
-const bugres = 'HOLLA , Re-Jeong is working on it...wait for the magic'
+const bugres = 'HOLLA *${pushname}*, Re-Jeong is working on it...wait for the magic'
 
 // VIRTEX
 		const {
