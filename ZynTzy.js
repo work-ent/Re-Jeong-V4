@@ -1369,23 +1369,29 @@ case 'hi':
         }
         break;
 
-case 'vv': {
-        if (!m.quoted) return reply(`Reply to a view once message`)
-        if (m.quoted.mtype !== 'viewOnceMessageV2') return reply(`Quoted message is not a view once message.`)
-    let msg = m.quoted.message
-    let type = Object.keys(msg)[0]
-    let media = await downloadContentFromMessage(msg[type], type == 'imageMessage' ? 'image' : 'video')
-    let buffer = Buffer.from([])
-    for await (const chunk of media) {
-        buffer = Buffer.concat([buffer, chunk])
-    }
-    if (/video/.test(type)) {
-        return zyn.sendFile(m.chat, buffer, 'media.mp4', msg[type].caption || 'Re-Jeong-V4', m)
-    } else if (/image/.test(type)) {
-        return zyn.sendFile(m.chat, buffer, 'media.jpg', msg[type].caption || 'Re-Jeong-V4', m)
-    }
-}
-break
+case "vv": case "retrieve":{
+
+if (!m.quoted) return m.reply("Quote a viewonce media!")
+
+if (m.quoted.message) {
+            let type = Object.keys(m.quoted.message)[0]
+            let q = m.quoted.message[type]
+            let media = await client.downloadMediaMessage(q)
+            if (/video/.test(type)) {
+
+
+               await zyn.sendMessage(m.chat, { video: media, caption: `Retrieved by Re-Jeong💦\nOriginal caption: ${q.caption}`}, { quoted: m})
+
+            } else if (/image/.test(type)) {
+
+await zyn.sendMessage(m.chat, { image: media, caption: `Retrieved by Re-Jeong 💦\nOriginal caption: ${q.caption}`}, { quoted: m})
+
+            }
+         } else m.reply("That is not a viewonce media. . .")
+
+      } 
+	break;
+
 
 case "apk":
       case "apkdl":
