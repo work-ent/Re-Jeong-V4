@@ -1,19 +1,19 @@
 /*
- YANG SEBAR YATIM 
-    AWOKAWOK
-    
- # SCRIPT ORI ZYNXZO V12/XII
- - DI LARANG RENAME
- - DI LARANG MEMPERJUAL
- - DI LARANG MEMPER SEBAR
- - DI LARANG MEREBUT ISTRI TETANGGA
+ Script by Re-Jeong Guanxii
+
+
+
+
+
+
+
+
+
+
+
+
+
  
- # THANK YOU
-    YANG UDAH SUPPORT ZYNXZO DARI 0
-    SEMOGA KALIAN SEHAT SELALU
-    
- # NOTE
-    SEMOGA KALIAN MEMAHAMI LARANGAN DI ATAS
 */
 require("./database/global")
 
@@ -161,7 +161,7 @@ if (m.key && m.key.remoteJid === 'status@broadcast') return zyn.readMessages([m.
 if (!zyn.public && !m.key.fromMe && chatUpdate.type === 'notify') return
 if (m.key.id.startsWith('BAE5') && m.key.id.length === 16) return
 m = func.smsg(zyn, m, store)
-require("./ZynTzy")(zyn, m, store)
+require("./rejeong")(zyn, m, store, rejeong)
 } catch (err) {
 console.log(err)
 }
