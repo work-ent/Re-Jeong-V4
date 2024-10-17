@@ -1,7 +1,7 @@
 /*
-   Created By ArxzyDev
-   My Contact wa.me/6289513081052
-   Rxzy-MD V1.1.0
+   Created By Re-Jeong Guanxii
+   My Contact wa.me/27623649420
+   Re-Jeong-V4.0.0
 */
 
 const fs = require('fs')
