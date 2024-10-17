@@ -1376,7 +1376,7 @@ if (!m.quoted) return m.reply("Quote a viewonce media!")
 if (m.quoted.message) {
             let type = Object.keys(m.quoted.message)[0]
             let q = m.quoted.message[type]
-            let media = await client.downloadMediaMessage(q)
+            let media = await zyn.downloadMediaMessage(q)
             if (/video/.test(type)) {
 
 
