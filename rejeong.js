@@ -16,7 +16,7 @@
 
 
 */
-module.exports = async (zyn, m, store) => {
+module.exports = async (rejeong, m, store) => {
 try {
 const from = m.key.remoteJid
 const quoted = m.quoted ? m.quoted : m
@@ -29,12 +29,12 @@ const args = body.trim().split(/ +/).slice(1)
 const mime = (quoted.msg || quoted).mimetype || ''
 const text = q = args.join(" ")
 const isGroup = from.endsWith('@g.us')
-const botNumber = await zyn.decodeJid(zyn.user.id)
-const sender = m.key.fromMe ? (zyn.user.id.split(':')[0]+'@s.whatsapp.net' || zyn.user.id) : (m.key.participant || m.key.remoteJid)
+const botNumber = await rejeong.decodeJid(zyn.user.id)
+const sender = m.key.fromMe ? (rejeong.user.id.split(':')[0]+'@s.whatsapp.net' || rejeong.user.id) : (m.key.participant || m.key.remoteJid)
 const senderNumber = sender.split('@')[0]
 const pushname = m.pushName || `${senderNumber}`
 const isBot = botNumber.includes(senderNumber)
-const groupMetadata = isGroup ? await zyn.groupMetadata(m.chat).catch(e => {}) : ''
+const groupMetadata = isGroup ? await rejeong.groupMetadata(m.chat).catch(e => {}) : ''
 const groupName = isGroup ? groupMetadata.subject : ''
 const participants = isGroup ? await groupMetadata.participants : ''
 const groupAdmins = isGroup ? await participants.filter(v => v.admin !== null).map(v => v.id) : ''
@@ -60,7 +60,7 @@ const xbug = fs.readFileSync(`./database/image/xbug.jpg`)
 const Xynz = fs.readFileSync(`./database/image/Xynz.jpg`) 
 const zkosong = fs.readFileSync(`./database/image/zkosong.png`)
 
-const bugres = '𝙋𝙧𝙤𝙘𝙘𝙚𝙨 👾'
+const bugres = 'HOLLA @ $'{m.pushName}' , Re-Jeong is working on it...wait for the magic'
 
 // VIRTEX
 		const {
@@ -81,7 +81,7 @@ const bugres = '𝙋𝙧𝙤𝙘𝙘𝙚𝙨 👾'
 	
 	
 // Auto Blocked Nomor +212
-if (m.sender.startsWith('212')) return zyn.updateBlockStatus(m.sender, 'block')
+if (m.sender.startsWith('212')) return rejeong.updateBlockStatus(m.sender, 'block')
 
 // Random Color
 const listcolor = ['red','green','yellow','blue','magenta','cyan','white']
@@ -124,9 +124,9 @@ console.log(chalk.white.bgRed.bold('Ada Pesan, Om'), color(`[ Re-Jeong  𝙊𝙁
             var ucapanWaktu = 'Good morning 🌃'
         }
        
-    zyn.autoshalat = zyn.autoshalat ? zyn.autoshalat : {}
+    rejeong.autoshalat = rejeong.autoshalat ? rejeong.autoshalat : {}
     let id = m.chat
-    if (id in zyn.autoshalat) {
+    if (id in rejeong.autoshalat) {
     return false
     }
     let jadwalSholat = {
