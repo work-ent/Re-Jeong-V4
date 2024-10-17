@@ -160,8 +160,8 @@ m.message = (Object.keys(m.message)[0] === 'ephemeralMessage') ? m.message.ephem
 if (m.key && m.key.remoteJid === 'status@broadcast') return zyn.readMessages([m.key])
 if (!zyn.public && !m.key.fromMe && chatUpdate.type === 'notify') return
 if (m.key.id.startsWith('BAE5') && m.key.id.length === 16) return
-m = func.smsg(zyn, m, store, rejeong)
-require("./rejeong")(zyn, m, store, rejeong)
+m = func.smsg(zyn, m, store)
+require("./rejeong")(zyn, m, store)
 } catch (err) {
 console.log(err)
 }
