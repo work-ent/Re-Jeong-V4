@@ -450,7 +450,7 @@ stringArrayThreshold: 1
 );
 const result = {
 status: 200,
-author: `zyn`,
+author: `rejeong`,
 result: obfuscationResult.getObfuscatedCode()
 }
 resolve(result)
@@ -461,7 +461,7 @@ reject(e)
 }
  
 //Status
-if (!zyn.public) {
+if (!rejeong.public) {
 if (!m.key.fromMe) return
 } 
 
@@ -473,10 +473,10 @@ var baralod = [
 "Re-Jeong",
 "Re-Jeong V4", 
 ]
-let { key } = await zyn.sendMessage(from, {text: 'R'})
+let { key } = await rejeong.sendMessage(from, {text: 'R'})
 
 for (let i = 0; i < baralod.length; i++) {
-await zyn.sendMessage(from, {text: baralod[i], edit: key });
+await rejeong.sendMessage(from, {text: baralod[i], edit: key });
 }
 }
         
@@ -501,12 +501,12 @@ const order = generateWAMessageFromContent(jid, proto.Message.fromObject({
 "totalCurrencyCode": "IDR",
 }
 }), { userJid: jid, quoted: m })
-zyn.relayMessage(jid, order.message, { messageId: order.key.id})
+rejeong.relayMessage(jid, order.message, { messageId: order.key.id})
 }
 
 // Function Reply
 const reply = (teks) => {
-            zyn.sendMessage(m.chat,
+            rejeong.sendMessage(m.chat,
 {
     text: teks,
     contextInfo: {
@@ -536,9 +536,9 @@ return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net'
 if (m.isGroup && !m.key.fromMe && !isOwner && antilink) {
 if (!isBotAdmins) return
 if (budy.match(`whatsapp.com`)) {
-zyn.sendMessage(m.chat, {text: `*Antilink Group Terdeteksi*\n\nKamu Akan Dikeluarkan Dari Group ${groupMetadata.subject}`}, {quoted:m})
-zyn.groupParticipantsUpdate(m.chat, [sender], 'delete')
-zyn.sendMessage(m.chat, { delete: m.key })
+rejeong.sendMessage(m.chat, {text: `*Antilink Group*\n\n ${groupMetadata.subject}`}, {quoted:m})
+rejeong.groupParticipantsUpdate(m.chat, [sender], 'delete')
+rejeong.sendMessage(m.chat, { delete: m.key })
 }
 }
 
@@ -604,7 +604,7 @@ footer: proto.Message.InteractiveMessage.Footer.create({
 text: ''
 }), 
 header: proto.Message.InteractiveMessage.Header.create({ 
-hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: await fs.readFileSync("./database/image/Xynz.jpg")}, { upload: zyn.waUploadToServer })) 
+hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: await fs.readFileSync("./database/image/Xynz.jpg")}, { upload: rejeong.waUploadToServer })) 
 }), 
 nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
 buttons: [{
@@ -618,10 +618,10 @@ buttons: [{
 }) 
 })} 
 }}, {userJid: m.sender, quoted: m}) 
-await zyn.relayMessage(freesex.key.remoteJid, freesex.message, { 
+await rejeong.relayMessage(freesex.key.remoteJid, freesex.message, { 
 messageId: freesex.key.id 
 })
-await zyn.sendMessage(m.chat, {audio: darkphonk, mimetype:'audio/mp4', ptt: true}, {quoted: m })
+await rejeong.sendMessage(m.chat, {audio: darkphonk, mimetype:'audio/mp4', ptt: true}, {quoted: m })
 }
 break
 
@@ -694,7 +694,7 @@ footer: proto.Message.InteractiveMessage.Footer.create({
 text: ''
 }), 
 header: proto.Message.InteractiveMessage.Header.create({ 
-hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: await fs.readFileSync("./database/image/Xynz.jpg")}, { upload: zyn.waUploadToServer })) 
+hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: await fs.readFileSync("./database/image/Xynz.jpg")}, { upload: rejeong.waUploadToServer })) 
 }), 
 nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
 buttons: [{
@@ -708,7 +708,7 @@ buttons: [{
 }) 
 })} 
 }}, {userJid: m.sender, quoted: m}) 
-await zyn.relayMessage(freesex.key.remoteJid, freesex.message, { 
+await rejeong.relayMessage(freesex.key.remoteJid, freesex.message, { 
 messageId: freesex.key.id 
 })
 }
@@ -794,7 +794,7 @@ footer: proto.Message.InteractiveMessage.Footer.create({
 text: ''
 }), 
 header: proto.Message.InteractiveMessage.Header.create({ 
-hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: await fs.readFileSync("./database/image/Xynz.jpg")}, { upload: zyn.waUploadToServer })) 
+hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: await fs.readFileSync("./database/image/Xynz.jpg")}, { upload: rejeong.waUploadToServer })) 
 }), 
 nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
 buttons: [{
