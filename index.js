@@ -51,7 +51,7 @@ if(usePairingCode && !rejeong.authState.creds.registered) {
 		console.log(chalk.green(`Your Pairing Code : ${code} `))
 
 	}
-store.bind(zyn.ev)
+store.bind(rejeong.ev)
 
 rejeong.ev.on('connection.update', async (update) => {
 const { connection, lastDisconnect } = update
