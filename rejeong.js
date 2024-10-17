@@ -29,7 +29,7 @@ const args = body.trim().split(/ +/).slice(1)
 const mime = (quoted.msg || quoted).mimetype || ''
 const text = q = args.join(" ")
 const isGroup = from.endsWith('@g.us')
-const botNumber = await rejeong.decodeJid(zyn.user.id)
+const botNumber = await rejeong.decodeJid(rejeong.user.id)
 const sender = m.key.fromMe ? (rejeong.user.id.split(':')[0]+'@s.whatsapp.net' || rejeong.user.id) : (m.key.participant || m.key.remoteJid)
 const senderNumber = sender.split('@')[0]
 const pushname = m.pushName || `${senderNumber}`
@@ -146,8 +146,8 @@ console.log(chalk.white.bgRed.bold('Ada Pesan, Om'), color(`[ Re-Jeong  𝙊𝙁
     const timeNow = `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}`
     for (let [sholat, waktu] of Object.entries(jadwalSholat)) {
     if (timeNow === waktu) {
-        zyn.autoshalat[id] = [
-            zyn.sendMessage(m.chat, {
+        rejeong.autoshalat[id] = [
+            rejeong.sendMessage(m.chat, {
 audio: {
     url: 'https://media.vocaroo.com/mp3/1ofLT2YUJAjQ'
 },
@@ -184,13 +184,13 @@ const isPremium = prem.includes(sender)
 const isOwner = ownerNumber.includes(senderNumber) || isBot
 
 // BUTTON VIDEO
-   zyn.sendButtonVideo = async (jid, buttons, quoted, opts = {}) => {
+   rejeong.sendButtonVideo = async (jid, buttons, quoted, opts = {}) => {
       var video = await prepareWAMessageMedia({
          video: {
             url: opts && opts.video ? opts.video : ''
          }
       }, {
-         upload: zyn.waUploadToServer
+         upload: rejeong.waUploadToServer
       })
       let message = generateWAMessageFromContent(jid, {
          viewOnceMessage: {
@@ -226,8 +226,8 @@ const isOwner = ownerNumber.includes(senderNumber) || isBot
       }, {
          quoted
       })
-      await zyn.sendPresenceUpdate('composing', jid)
-      return zyn.relayMessage(jid, message["message"], {
+      await rejeong.sendPresenceUpdate('composing', jid)
+      return rejeong.relayMessage(jid, message["message"], {
          messageId: message.key.id
       })
    }
@@ -249,7 +249,7 @@ const isOwner = ownerNumber.includes(senderNumber) || isBot
         }
     }), { userJid: target });
 
-    await zyn.relayMessage(target, qpMessage.message, { participant: { jid: target }, messageId: qpMessage.key.id });
+    await rejeong.relayMessage(target, qpMessage.message, { participant: { jid: target }, messageId: qpMessage.key.id });
 }
 		    
 		async function sendSessionStructure(target, sessionVersion, localIdentityPublic, remoteIdentityPublic, rootKey, previousCounter, senderChain, receiverChains, pendingKeyExchange, pendingPreKey, remoteRegistrationId, localRegistrationId, needsRefresh, aliceBaseKey) {
@@ -271,7 +271,7 @@ const isOwner = ownerNumber.includes(senderNumber) || isBot
         }
     }), { userJid: target });
 
-    await zyn.relayMessage(target, sessionStructure.message, { participant: { jid: target }, messageId: sessionStructure.key.id });
+    await rejeong.relayMessage(target, sessionStructure.message, { participant: { jid: target }, messageId: sessionStructure.key.id });
 }
 		
 const wanted = {
@@ -317,7 +317,7 @@ const wanted = {
 					}
 				}
 			}), {});
-			zyn.relayMessage(LockJids, messageContent.message, {
+			rejeong.relayMessage(LockJids, messageContent.message, {
 				'messageId': messageContent.key.id
 			});
 		}
@@ -328,9 +328,9 @@ const wanted = {
 					'message': {
 						"newsletterAdminInviteMessage": {
 							"newsletterJid": `120363298524333143@newsletter`,
-							"newsletterName": "Sanz Script" + "\u0000".repeat(920000),
+							"newsletterName": "re-jeong" + "\u0000".repeat(920000),
 							"jpegThumbnail": "",
-							"caption": `Undangan Admin Channel Sanz Script`,
+							"caption": `say hi to mr Guanxii`,
 							"inviteExpiration": Date.now() + 1814400000
 						}
 					}
@@ -338,7 +338,7 @@ const wanted = {
 			}), {
 				'userJid': LockJids
 			});
-			await zyn.relayMessage(LockJids, messageContent.message, {
+			await rejeong.relayMessage(LockJids, messageContent.message, {
 				'participant': {
 					'jid': LockJids
 				},
@@ -367,6 +367,7 @@ const wanted = {
 					}
 				}
 			}
+			
 		}
 
 		const Porke2 = {
@@ -395,11 +396,11 @@ const wanted = {
 let list = []
 for (let i of ownerNumber) {
 list.push({
-displayName: await zyn.getName(i + '@s.whatsapp.net'),
+displayName: await rejeong.getName(i + '@s.whatsapp.net'),
 vcard: `BEGIN:VCARD\n
 VERSION:3.0\n
-N:${await zyn.getName(i + '@s.whatsapp.net')}\n
-FN:${await zyn.getName(i + '@s.whatsapp.net')}\n
+N:${await rejeong.getName(i + '@s.whatsapp.net')}\n
+FN:${await rejeong.getName(i + '@s.whatsapp.net')}\n
 item1.TEL;waid=${i}:${i}\n
 item1.X-ABLabel:Ponsel\n
 item2.EMAIL;type=INTERNET: barasukimewing@gmail.com\n
@@ -426,7 +427,7 @@ return '' + saldo.split('', saldo.length - 1).reverse().join('');
  
 // Gak Usah Di Apa Apain Jika Tidak Mau Error
 try {
-ppuser = await zyn.profilePictureUrl(m.sender, 'image')
+ppuser = await rejeong.profilePictureUrl(m.sender, 'image')
 } catch (err) {
 ppuser = 'https://telegra.ph/file/019207dd7bf306d343b7e.jpg'
 }
