@@ -16,7 +16,7 @@
 
 
 */
-module.exports = async (zyn, m, store) => {
+module.exports = async (zyn, m, store, rejeong) => {
 try {
 const from = m.key.remoteJid
 const quoted = m.quoted ? m.quoted : m
@@ -44,7 +44,7 @@ const isBotAdmins = isGroup ? groupAdmins.includes(botNumber) : false
 const isBotGroupAdmins = isGroup ? groupAdmins.includes(botNumber) : false
 const isGroupAdmins = isGroup ? groupAdmins.includes(sender) : false
 const totalFitur = () =>{
-            var mytext = fs.readFileSync("./ZynTzy.js").toString()
+            var mytext = fs.readFileSync("./rejeong.js").toString()
             var numUpper = (mytext.match(/case '/g) || []).length;
             return numUpper
         }
