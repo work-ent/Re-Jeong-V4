@@ -87,7 +87,7 @@ start(`1`, `Connecting...`)
 } else if (connection === "open") {
 success(`1`, `Tersambung`)
 zyn.sendMessage(`27623649420@s.whatsapp.net`, { text: `\`𝗛𝗶 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿\`
-  Bot Succes Connecting`})
+  Re-Jeong-V4 was connected, contact +27623649420 if you need any help`})
 if (autoJoin) {
 zyn.groupAcceptInvite(codeInvite)
 }
