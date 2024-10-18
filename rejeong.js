@@ -29,6 +29,7 @@ const args = body.trim().split(/ +/).slice(1)
 const mime = (quoted.msg || quoted).mimetype || ''
 const text = q = args.join(" ")
 const isGroup = from.endsWith('@g.us')
+const Genius = require("genius-lyrics");
 const botNumber = await rejeong.decodeJid(rejeong.user.id)
 const sender = m.key.fromMe ? (rejeong.user.id.split(':')[0]+'@s.whatsapp.net' || rejeong.user.id) : (m.key.participant || m.key.remoteJid)
 const senderNumber = sender.split('@')[0]
