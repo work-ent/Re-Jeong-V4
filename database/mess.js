@@ -18,7 +18,7 @@ const mess = {
        owner: "`[ # ] owner`",
        admin: "`[ # ] admin`",
        badmin: "`[ # ] bot must be admin`",
-       premium: "`[ # ] To buy premium,chat my owner https://wa.me/27623649420`",
+       premium: "`[ # ] sorry 😂you not a premium user`",
    }
 }
 
